@@ -105,7 +105,7 @@
   </footer>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .footer__inner
 
   .links

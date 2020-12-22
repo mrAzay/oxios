@@ -86,9 +86,9 @@
 
 <style lang="scss" scoped>
   .works {
-    padding-top: 90px;
    &__inner{
      padding-bottom: 190px;
+     display: block
    }
 
     &__title {
@@ -158,10 +158,6 @@
       width: 100%;
       max-width: 50%;
     }
-  }
-
-  @media (max-width: 1150px){
-
     .works-item{
       flex-direction: column;
       &__img{

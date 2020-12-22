@@ -1406,17 +1406,6 @@ main
     margin-left: -220px
     margin-right: -140px
 
-@media (max-width: 1050px)
-  .contact__inner
-    flex-direction: column
-    align-items: center
-  .contact__form
-    margin-bottom: 50px
-  .contact
-    margin-top: 0
-  .contact__content-text-title
-    margin-top: 50px
-
 @media (max-width: 1000px)
   .preview__img
     margin-right: -220px

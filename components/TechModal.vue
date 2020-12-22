@@ -70,7 +70,7 @@ export default {
   }
 }
 </script>
-<style lang="sass">
+<style lang="sass" scoped>
   .mob
     display: none
   .tech-modal

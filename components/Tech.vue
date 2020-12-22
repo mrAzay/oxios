@@ -89,7 +89,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .stack
   &__items
     display: flex

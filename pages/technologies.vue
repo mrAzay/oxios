@@ -19,7 +19,7 @@
   </div>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .technologies
     padding-top: 90px
     padding-bottom: 120px

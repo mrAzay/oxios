@@ -25,7 +25,7 @@
   </section>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .map
     height: 500px
     padding-top: 60px

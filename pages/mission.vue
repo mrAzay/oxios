@@ -140,7 +140,7 @@
   </div>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .mission
   padding-top: 90px
   padding-bottom: 100px

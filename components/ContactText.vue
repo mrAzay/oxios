@@ -13,7 +13,7 @@
   </section>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .contact-text
     background: #F4F3F8
     padding-top: 100px

@@ -59,7 +59,7 @@
   </section>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .contact
     padding-top: 90px
     padding-bottom: 145px
@@ -143,6 +143,19 @@
     &__wrapper-form
       max-width: 470px
       width: 100%
+@media (max-width: 1050px)
+  .contact__inner
+    flex-direction: column
+    align-items: center
+  .contact__form
+    margin-bottom: 50px
+  .contact
+    margin-top: 0
+  .contact__content-text-title
+    margin-top: 40px
+  .contact__content-title
+    margin-bottom: 20px
+    margin-top: 15px
 @media (max-width: 1040px)
   .contact__content
     margin-left: 40px
@@ -158,6 +171,7 @@
     margin-bottom: 90px
   .contact__content-text-title
     margin-top: 60px
+
 </style>
 
 <script>
