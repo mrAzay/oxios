@@ -18,6 +18,7 @@ li
 *:hover,
 *:active
   outline: transparent
+  box-sizing: border-box
 
 h1,
 h2
@@ -30,9 +31,21 @@ h2
 
 ul,
 li,
-p
+p,
+h3
   margin: 0
   padding: 0
+
+.container
+  max-width: 1170px
+  width: 100%
+  margin: 0 auto
+@media (max-width: 1170px)
+  .container
+    padding: 0 30px
+@media (max-width: 400px)
+  .container
+    padding: 0 20px
 
 .button-link
   background: #FF6E6C
@@ -45,10 +58,29 @@ p
   color: #fff
   display: block
   width: fit-content
+  border: none
+  transition: all 0.5s ease
   &:hover
     background-color: #E84F4D
   &:active
     background-color: #AD4949
+
+.button
+  border: 2px solid #7873AA
+  border-radius: 4px
+  color: #7873AA
+  font-weight: 500
+  font-size: 16px
+  padding: 15px 60px
+  background: none
+  transition: all 0.5s ease
+  &:hover
+    background: #7873AA
+    color: #fff
+  &:active
+    background: #1F1235
+    color: #fff
+    border-color: #1F1235
 
 .list
   padding-left: 35px
