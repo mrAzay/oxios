@@ -108,4 +108,13 @@ export default {
       box-shadow: 0px 5px 20px rgba(52, 49, 80, 0.1)
       border-radius: 8px
       filter: grayscale(0)
+@media (max-width: 900px)
+  .stack__items
+    justify-content: space-around
+@media (max-width: 600px)
+  .stack__item
+    width: 40%
+    padding: 20px 0
+    margin-bottom: 10px
+    height: auto
 </style>

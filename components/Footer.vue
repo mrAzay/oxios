@@ -106,7 +106,6 @@
 </template>
 
 <style lang="sass" scoped>
-  .footer__inner
 
   .links
     grid-area: links
@@ -201,5 +200,7 @@
   .footer__follow-link + .footer__follow-link
     margin-top: 0
   .footer__logo-copyright
-    margin-top: 100px
+    margin-top: 50px
+  .footer__title
+    margin-bottom: 50px
 </style>

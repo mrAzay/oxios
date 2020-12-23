@@ -10,7 +10,7 @@
           <li class="header__burger-item" />
           <li class="header__burger-item" />
         </ul>
-        <nav class="header__nav" :class="{active: mobileMenu}">
+        <nav v-body-scroll-lock="mobileMenu" class="header__nav" :class="{active: mobileMenu}">
           <ul class="header__nav-list">
             <li class="close">
               <button @click="mobileMenu = !mobileMenu">
@@ -133,7 +133,7 @@
     width: 100vw
     height: 100vh
     z-index: 22
-    position: absolute
+    position: fixed
     top: 0
     left: 0
     align-items: center

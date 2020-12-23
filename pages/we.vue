@@ -215,9 +215,10 @@
 </template>
 
 <style lang="sass" scoped>
+main
+  overflow: hidden
 .preview
   overflow: hidden
-  padding-bottom: 200px
   padding-top: 90px
   &__title
     margin-bottom: 60px
@@ -230,8 +231,7 @@
     color: #1B1425
 .join
   &__images
-    overflow: scroll
-    width: 100vw
+    overflow-x: scroll
     display: flex
     justify-content: flex-start
     align-items: center
@@ -246,11 +246,9 @@
       background-color: #7873AA
   &__img
     margin-right: 30px
-    &:last-child
-      opacity: 0
-      visibility: hidden
 .team
-  padding-bottom: 190px
+  padding-bottom: 100px
+  display: block
   &__title
     margin-bottom: 60px
     font-weight: 500

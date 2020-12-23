@@ -75,7 +75,8 @@ export default {
     display: none
   .tech-modal
     z-index: 100
-    max-height: 100vh
+    min-height: 100vh
+    height: auto
     width: 100vw
     position: fixed
     top: 50%

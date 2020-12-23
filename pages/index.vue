@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main>
+    <main class="index-main">
       <section class="preview section">
         <div class="container">
           <div class="preview__inner section__inner">
@@ -1089,6 +1089,8 @@
 </template>
 
 <style lang="sass" >
+.index-main
+  overflow: hidden
 #robot
   transition: opacity 0.5s ease
 .section__inner
@@ -1104,7 +1106,6 @@
       margin-top: 20px
 
 .preview
-  padding-top: 41px
   overflow: hidden
   &__title
     max-width: 570px
@@ -1117,7 +1118,6 @@
 
 .clients
   padding-top: 70px
-  padding-bottom: 100px
   &__title
     padding-bottom: 30px
   &__items
@@ -1162,12 +1162,11 @@
 
 .stack
   padding-top: 60px
-  padding-bottom: 166px
   &__title
     margin-bottom: 60px
 
 .cta
-  padding-top: 265px
+  padding-top: 175px
   padding-bottom: 200px
   position: relative
   &__bg
@@ -1186,7 +1185,6 @@
 
 .works
   padding-top: 120px
-  padding-bottom: 140px
   background: linear-gradient(180deg, #F4F3F8 0%, #FFFFFF 100%)
   &__inner
     display: flex
@@ -1204,6 +1202,7 @@
     line-height: 140%
     margin-bottom: 40px
     max-width: 300px
+
   &__slider
     &-item
       transform: scale(0.6)
@@ -1238,7 +1237,7 @@
         left: 30px
 
 .testimonials
-  padding: 120px 0
+  padding: 120px 0 60px
   &__inner
     padding: 0 80px
     margin: 0 -80px
@@ -1386,14 +1385,15 @@
   & > svg
     position: absolute
     top: 210px
-section,
-main
-  overflow: hidden
 
 @media (max-width: 1770px)
   .robot-wrapper > svg
     display: none
 
+@media (max-width: 1330px)
+  .testimonials__slider-button-prev,
+  .testimonials__slider-button-next
+    display: none
 @media (max-width: 1250px)
   .swiper-slide-next:after
     display: none
@@ -1420,7 +1420,11 @@ main
   .works__slider-wrapper
     margin-right: 0
     width: 100%
-
+  .works__content
+    margin: 0 auto
+  .works__title
+    margin-bottom: 30px
+    margin-top: 60px
 @media (max-width: 900px)
   .cta
     padding-top: 0
@@ -1430,8 +1434,7 @@ main
     &__bg
       width: auto
       z-index: -1
-  .stack__items
-    justify-content: space-around
+
   .web-development__inner,
   .services__inner
     flex-direction: column-reverse
@@ -1480,19 +1483,12 @@ main
 @media (max-width: 750px)
   .preview__img
     margin: -50px -160px
-  svg
-     width: 100%
 
 @media (max-width: 700px)
   .preview__inner
     flex-direction: column-reverse
 
 @media (max-width: 600px)
-  .stack__item
-    width: 40%
-    padding: 20px 0
-    margin-bottom: 10px
-    height: auto
   .web-development__img
     display: flex
     align-items: center

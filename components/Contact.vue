@@ -159,7 +159,10 @@
 @media (max-width: 1040px)
   .contact__content
     margin-left: 40px
-@media (max-width: 840px)
+  .contact
+    padding-bottom: 50px
+
+  @media (max-width: 840px)
   .contact
     padding-top: 0
   .contact__inner
