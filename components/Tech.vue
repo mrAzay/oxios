@@ -102,12 +102,11 @@ export default {
     align-items: center
     justify-content: center
     transition: all .2s ease
-    filter: grayscale(1)
     cursor: pointer
     &:hover
       box-shadow: 0px 5px 20px rgba(52, 49, 80, 0.1)
       border-radius: 8px
-      filter: grayscale(0)
+      transform: scale(1.2)
 @media (max-width: 900px)
   .stack__items
     justify-content: space-around

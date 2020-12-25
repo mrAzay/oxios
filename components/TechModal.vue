@@ -75,8 +75,7 @@ export default {
     display: none
   .tech-modal
     z-index: 100
-    min-height: 100vh
-    height: auto
+    height: 100vh
     width: 100vw
     position: fixed
     top: 50%
@@ -100,7 +99,7 @@ export default {
       background: none
     &__top
       display: flex
-      align-items: flex-start
+      align-items: center
       margin-bottom: 145px
       &-text
         margin-left: 30px
@@ -125,7 +124,7 @@ export default {
         padding-left: 60px
         margin-bottom: 30px
       &-list
-        height: 300px
+        height: 288px
         overflow: auto
         &::-webkit-scrollbar
           background: rgb(255, 255, 255)

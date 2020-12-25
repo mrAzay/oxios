@@ -209,7 +209,7 @@
     line-height: 140%
     color: #1B1425
 .job
-  padding-bottom: 185px
+  padding-bottom: 30px
   &__title
     color: #FF6E6C
     margin-bottom: 60px

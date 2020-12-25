@@ -87,8 +87,8 @@
 
 <style lang="sass" scoped>
 .blog
-  padding-top: 120px
-  padding-bottom: 200px
+  padding-top: 70px
+  padding-bottom: 100px
   &__inner
     display: flex
     flex-wrap: wrap
@@ -151,37 +151,37 @@
         &+&
           margin-top: 15px
 @media (max-width: 1170px)
-.blog__preview
-  flex-direction: column-reverse
-.blog__title
-  max-width: 700px
-  margin-bottom: 35px
-  align-self: flex-start
-.discription
-  flex: 1 1 0
-.blog__img
-  width: 100%
-  object-fit: cover
+  .blog__preview
+    flex-direction: column-reverse
+  .blog__title
+    max-width: 700px
+    margin-bottom: 35px
+    align-self: flex-start
+  .discription
+    flex: 1 1 0
+  .blog__img
+    width: 100%
+    object-fit: cover
 @media (max-width: 900px)
-.blog
-  padding-top: 50px
-  padding-bottom: 50px
+  .blog
+    padding-top: 50px
+    padding-bottom: 50px
 @media (max-width: 650px)
-.blog__socials
-  width: 100%
-  padding-bottom: 20px
-.blog__social
-  display: inline-block
-  margin-top: 20px
-  &+&
-    margin-left: 20px
-.blog__social-title
-  margin-bottom: 0
-.discription
-  margin-left: 0
-.discription-analitic
-  padding-top: 60px
-@media (max-width: 450px)
-.blog__link-text
-  display: none
+  .blog__socials
+    width: 100%
+    padding-bottom: 20px
+  .blog__social
+    display: inline-block
+    margin-top: 20px
+    &+&
+      margin-left: 20px
+  .blog__social-title
+    margin-bottom: 0
+  .discription
+    margin-left: 0
+  .discription-analitic
+    padding-top: 60px
+  @media (max-width: 450px)
+  .blog__link-text
+    display: none
 </style>

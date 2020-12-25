@@ -169,7 +169,7 @@
   &__img
     margin-left: -100px
 .vision
-  padding-bottom: 100px
+  padding-bottom: 50px
   &__content
     display: flex
     align-items: center
@@ -188,7 +188,7 @@
   &__img
     margin-right: -70px
 .value
-  padding-bottom: 150px
+  padding-bottom: 50px
   &__title
     margin-bottom: 100px
   &__item

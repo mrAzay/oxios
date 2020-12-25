@@ -115,6 +115,8 @@
 
   .logo
     grid-area: logo
+    display: flex
+    align-items: center
 
   .copy
     grid-area: copy
@@ -129,9 +131,9 @@
       grid-template-columns: 1.5fr 2fr 1fr
       grid-template-rows: 1fr 1fr
       gap: 0px 0px
-      grid-template-areas: "logo links follow" "copy links follow"
+      grid-template-areas: "logo links follow" "logo links follow" "copy copy copy"
     &__logo-img
-      margin-bottom: 60px
+      width: 55%
     &__title
       margin-bottom: 60px
       font-weight: 500

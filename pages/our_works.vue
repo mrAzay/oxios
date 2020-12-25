@@ -86,8 +86,9 @@
 
 <style lang="scss" scoped>
   .works {
+    padding-top: 70px;
    &__inner{
-     padding-bottom: 190px;
+     padding-bottom: 20px;
      display: block
    }
 
@@ -96,6 +97,7 @@
       font-size: 36px;
       line-height: 120%;
       color: #7873AA;
+      margin-top: 30px;
     }
 
     &-item {
@@ -163,6 +165,12 @@
       &__img{
         max-width: none;
       }
+    }
+  }
+
+  @media (max-width: 600px){
+    .works{
+      padding-top: 30px;
     }
   }
 

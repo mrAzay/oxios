@@ -208,6 +208,10 @@
           </div>
         </div>
       </section>
+      <div class="container">
+        <hr>
+      </div>
+
       <Contact />
     </main>
     <Footer />
@@ -215,6 +219,11 @@
 </template>
 
 <style lang="sass" scoped>
+hr
+  border: none /* Убираем границу для браузера Firefox */
+  color: #7873AA /* Цвет линии для остальных браузеров */
+  background-color: #7873AA /* Цвет линии для браузера Firefox и Opera */
+  height: 2px /* Толщина линии */
 main
   overflow: hidden
 .preview
@@ -310,7 +319,7 @@ main
     color: #FF6E6C
 .services
   padding-top: 35px
-  padding-bottom: 160px
+  padding-bottom: 90px
   &__title
     margin-bottom: 90px
   &__items
@@ -341,6 +350,21 @@ main
     width: 100%
     height: auto
     object-fit: cover
+@media(max-width: 1000px)
+  .services__items
+      justify-content: center
+  .services__title
+      text-align: left
+      display: block
+      max-width: 470px
+      width: 100%
+      margin-left:  auto
+      margin-right: auto
+      margin-bottom: 40px
+  .team
+    padding-bottom: 0
+  hr
+    margin-bottom: 90px
 @media(max-width: 550px)
   .team__items
     justify-content: space-around
