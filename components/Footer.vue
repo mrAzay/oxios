@@ -4,32 +4,32 @@
       <div class="footer__inner">
         <div class="links">
           <div class="footer__links-title footer__title">
-            Links
+            {{ $t('FooterLinks') }}
           </div>
           <div class="footer__links">
-            <nuxt-link to="/our__works" class="footer__link">
-              Our works
+            <nuxt-link :to="localePath('/our__works')" class="footer__link">
+              {{ $t('FooterLinkWorks') }}
             </nuxt-link>
-            <nuxt-link to="/blog" class="footer__link">
-              Blog
+            <nuxt-link :to="localePath('/blog')" class="footer__link">
+              {{ $t('FooterLinkBlog') }}
             </nuxt-link>
-            <nuxt-link to="/technologies" class="footer__link">
-              Technologies
+            <nuxt-link :to="localePath('/technologies')" class="footer__link">
+              {{ $t('FooterLinkTechnologies') }}
             </nuxt-link>
-            <nuxt-link to="/contacts" class="footer__link">
-              Contact Us
+            <nuxt-link :to="localePath('/contacts')" class="footer__link">
+              {{ $t('FooterLinkContact') }}
             </nuxt-link>
-            <nuxt-link to="/we" class="footer__link">
-              About Us
+            <nuxt-link :to="localePath('/we')" class="footer__link">
+              {{ $t('FooterLinkAbout') }}
             </nuxt-link>
-            <nuxt-link to="#" class="footer__link">
-              Get a Checklist
+            <nuxt-link :to="localePath('/#')" class="footer__link">
+              {{ $t('FooterLinkGet') }}
             </nuxt-link>
           </div>
         </div>
         <div class="follow">
           <div class="footer__follow-title footer__title">
-            Follow Us
+            {{ $t('FooterFollows') }}
           </div>
           <div class="footer__follow-links">
             <a class="footer__follow-link" href="#">
@@ -97,7 +97,7 @@
         </div>
         <div class="copy">
           <div class="footer__logo-copyright">
-            OXIOS © 2020  All Rights Reserved
+            {{ $t('FooterCopy') }}
           </div>
         </div>
       </div>

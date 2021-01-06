@@ -4,16 +4,16 @@
       <div class="contact__inner">
         <div class="contact__wrapper-form">
           <h2 class="contact__title">
-            Tell us about your project
+            {{ $t('ContactTitle') }}
           </h2>
           <div class="contact__form">
-            <input type="text" class="contact__form-input" placeholder="*Your Name">
-            <input type="email" class="contact__form-input" placeholder="*E-mail">
-            <input type="tel" class="contact__form-input" placeholder="*Phone">
-            <input type="text" class="contact__form-input" placeholder="Project details">
+            <input type="text" class="contact__form-input" :placeholder="$t('ContactName')">
+            <input type="email" class="contact__form-input" :placeholder="$t('ContactEmail')">
+            <input type="tel" class="contact__form-input" :placeholder="$t('ContactPhone')">
+            <input type="text" class="contact__form-input" :placeholder="$t('ContactProject')">
             <label class="contact__form-input contact__form-input-file-wrapper">
               <span class="contact__form-input-file-text">
-                {{ fileName === '' ? 'Attach file' : fileName }}
+                {{ fileName === '' ? $t('ContactFile') : fileName }}
               </span>
               <input id="fileId" class="contact__form-input-file" type="file" name="attachment[]" @change="onFileChange">
               <svg
@@ -28,30 +28,30 @@
               </svg>
             </label>
             <p class="contact__form-text">
-              max filesize 50Mb
+              {{ $t('ContactFileSize') }}
             </p>
             <button class="button-link contact__form-button">
-              Send
+              {{ $t('ContactSend') }}
             </button>
             <p class="contact__form-policy">
-              By clicking on the button you agree with <a class="contact__form-policy-link" href="#">Privacy Policy</a>
+              {{ $t('ContactSendText') }} <a class="contact__form-policy-link" href="#">{{ $t('ContactSendTextLink') }}</a>
             </p>
           </div>
         </div>
         <div class="contact__content">
           <h3 class="contact__content-title">
-            Contacts
+            {{ $t('Contact') }}
           </h3>
           <a href="mailto:info@oxios.com" class="contact__content-link contact__content-email">info@oxios.com</a>
           <a href="tel:+380991234567" class="contact__content-link contact__content-tel">+380 (99) 123 45 67</a>
           <h3 class="contact__content-text-title">
-            Startup Investment Checklist
+            {{ $t('ContactTitleSmall') }}
           </h3>
           <p class="contact__content-text">
-            Product pitch or product spec is not enough. You must prove that the value you bring is worth funding. And that’s how.
+            {{ $t('ContactText') }}
           </p>
           <button class="contact__content-button button">
-            Get a Checklist
+            {{ $t('ContactCheck') }}
           </button>
         </div>
       </div>

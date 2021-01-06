@@ -11,10 +11,10 @@
         <img src="~/static/images/icons-tech/react-native-big.png" alt="" class="tech-modal__top-img">
         <div class="tech-modal__top-text">
           <div class="tech-modal__top-title">
-            Choose Our Vetted React Native App Developers To Work On Your Project
+            {{ $t('ReactNativeTitle') }}
           </div>
           <div class="tech-modal__top-subtitle">
-            Our experts are in close cooperation and capable of delivering end to end software solutions that best suit your business model and result in success.
+            {{ $t('ReactNativeText') }}
           </div>
         </div>
       </div>
@@ -26,8 +26,8 @@
           <li v-for="(item, index) in examples" :key="index" class="tech-modal__examples-list-item">
             <span class="tech-modal__examples-numb">0{{ index }}</span><span class="tech-modal__examples">{{ item.name }}</span>
             <a href="item.link" class="tech-modal__examples-btn button">
-              <span class="desc">View the Presentation</span>
-              <span class="mob">View</span>
+              <span class="desc">{{ $t('WorkBtn') }}</span>
+              <span class="mob">{{ $t('View') }}</span>
             </a>
           </li>
         </ul>

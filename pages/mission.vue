@@ -6,22 +6,22 @@
         <div class="container">
           <div class="mission__inner">
             <p class="mission__quote">
-              All that we do is guided by delivering solutions so that you can smoothly run your business everywhere, with no worries, without any barriers.
+              {{ $t('MissionCitata') }}
             </p>
             <div class="mission__content">
               <img src="~/static/images/mission.png" alt="" class="mission__img">
               <div class="mission__content-text">
                 <h2 class="mission__title">
-                  Our Mission
+                  {{ $t('MissionTitleOne') }}
                 </h2>
                 <p class="mission__text">
-                  As Bill Gates stated, ‘There will be two types of businesses in the next five years, those that are on the Internet, and those that are out of business.’
+                  {{ $t('MissionTextOneOne') }}
                 </p>
                 <p class="mission__text">
-                  We help improve and bring your business online through custom software solutions. The greatest achievement for us is to make maximum profit for your business, drive real value for your users, and ensure your product hits the top ratings.
+                  {{ $t('MissionTextOneTwo') }}
                 </p>
                 <p class="mission__text">
-                  We provide web and mobile tools and deliver advanced tech solutions to be implemented to guarantee high-quality, fast, seamless, flexible, and easy-to-use final product. Our mission is to create not just apps. We will help you implement solutions that everyone always is going to want.
+                  {{ $t('MissionTextOneThree') }}
                 </p>
               </div>
             </div>
@@ -35,19 +35,19 @@
               <img src="~/static/images/vision.png" alt="" class="vision__img">
               <div class="vision__content-text">
                 <h2 class="vision__title">
-                  Our Vision
+                  {{ $t('MissionTitleTwo') }}
                 </h2>
                 <p class="vision__text">
-                  People now need not only highly effective products but fast and convenient as well.
+                  {{ $t('MissionTextTwoOne') }}
                 </p>
                 <p class="vision__text">
-                  With the rapid technologies expansion and intrusion of online solutions, the market has drastically changed. Offline spheres primarily constituting users’ everyday lives now suffer from devouring by mobile segment.
+                  {{ $t('MissionTextTwoTwo') }}
                 </p>
                 <p class="vision__text">
-                  Here end to end solutions arise, representing a new, increasingly developing field of innovative products.
+                  {{ $t('MissionTextTwoThree') }}
                 </p>
                 <p class="vision__text">
-                  At OpenGeeksLab, we offer top-end solutions on the web and mobile development market, which will help your idea grow and conquer business hills by breathing new life into your customers’ daily routine.
+                  {{ $t('MissionTextTwoFour') }}
                 </p>
               </div>
             </div>
@@ -58,7 +58,7 @@
         <div class="container">
           <div class="value__inner">
             <h2 class="value__title">
-              Our Values
+              {{ $t('MissionValue') }}
             </h2>
             <ul class="value__items">
               <li class="value__item">
@@ -66,10 +66,10 @@
                   01
                 </div>
                 <div class="value__item-title">
-                  OXIOS is about top-end service and results
+                  {{ $t('MissionValueTitleOne') }}
                 </div>
                 <div class="value__item-text">
-                  We will develop your product so great that you do not want to make changes. We do not pursue quantity—we value high-end quality and results.
+                  {{ $t('MissionValueTextOne') }}
                 </div>
               </li>
               <li class="value__item">
@@ -77,10 +77,10 @@
                   02
                 </div>
                 <div class="value__item-title">
-                  OXIOS  is about trust
+                  {{ $t('MissionValueTitleTwo') }}
                 </div>
                 <div class="value__item-text">
-                  Year after year, OpenGeeksLab has been recognized as one of Europe’s most talented developers. We have clientele across the globe that highly evaluates services we deliver and return to us to create new amazing products.
+                  {{ $t('MissionValueTextTwo') }}
                 </div>
               </li>
               <li class="value__item">
@@ -88,10 +88,10 @@
                   03
                 </div>
                 <div class="value__item-title">
-                  OXIOS is about transparency
+                  {{ $t('MissionValueTitleThree') }}
                 </div>
                 <div class="value__item-text">
-                  Due to transparency, we achieve the effect of your real presence in our workflow. We are working with two-week sprints accompanied by everyday meetups. After each sprint, we have a retrospective call and discuss the work segment—what was done well and what should be improved. As we are in the heart of Europe, we work during your working hours.
+                  {{ $t('MissionValueTextThree') }}
                 </div>
               </li>
               <li class="value__item">
@@ -99,10 +99,10 @@
                   04
                 </div>
                 <div class="value__item-title">
-                  OXIOS is about getting a step ahead
+                  {{ $t('MissionValueTitleFour') }}
                 </div>
                 <div class="value__item-text">
-                  We are on a wave of emerging and changing trends to ensure a competitive advantage for your business that is not available to an average person. Therefore, you get the technical solutions that best suit your business model so that you can get a step ahead of competitors.
+                  {{ $t('MissionValueTextFour') }}
                 </div>
               </li>
               <li class="value__item">
@@ -110,11 +110,10 @@
                   05
                 </div>
                 <div class="value__item-title">
-                  OXIOS is about offering your
-                  customers a lifelike immersive experience
+                  {{ $t('MissionValueTitleFive') }}
                 </div>
                 <div class="value__item-text">
-                  The modern market is wide-open to innovative digital solutions. We know how to transform your business to offer your customers a lifelike immersive experience and breathe new life into your customer’s daily routine.
+                  {{ $t('MissionValueTextFive') }}
                 </div>
               </li>
               <li class="value__item">
@@ -122,10 +121,10 @@
                   06
                 </div>
                 <div class="value__item-title">
-                  OXIOS is about moving beyond standard business models
+                  {{ $t('MissionValueTitleSix') }}
                 </div>
                 <div class="value__item-text">
-                  We know how to use the software in the right way to move your business beyond standard models and revolutionize your opportunities. Choosing us, you help your organization grow and adapt to new dynamics, not just to fit in.
+                  {{ $t('MissionValueTextSix') }}
                 </div>
               </li>
             </ul>

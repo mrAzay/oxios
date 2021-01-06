@@ -6,10 +6,10 @@
         <div class="container">
           <div class="preview__inner">
             <h1 class="preview__title">
-              Who We Are
+              {{ $t('WeTitle') }}
             </h1>
             <p class="preview__text">
-              <span class="lavanda-color"> OXIOS</span> believes that overall success depends on each team member. We contribute to employees' pro-growth. We are happy to share our knowledge with newcomers and are always ready to learn new approaches to solving new exciting and challenging tasks.
+              <span class="lavanda-color"> OXIOS</span> {{ $t('WeText') }}
             </p>
             <div class="join__images">
               <img src="~/static/images/join1.jpg" class="join__img">
@@ -26,7 +26,7 @@
         <div class="container">
           <div class="team__inner">
             <h2 class="team__title title">
-              Our Team
+              {{ $t('OurTeam') }}
             </h2>
             <div class="team__items">
               <div class="team__item">
@@ -169,39 +169,39 @@
         <div class="container">
           <div class="services__inner">
             <h2 class="services__title">
-              Our Services
+              {{ $t('WeServices') }}
             </h2>
             <div class="services__items">
               <div class="services__item">
                 <div class="services__item-title">
-                  Mobile Apps Development
+                  {{ $t('WeSubtitleOne') }}
                 </div>
                 <div class="services__item-text">
-                  As proven app developers, we empower end to end mobile solutions—both native and hybrid, regarding your goals, budget, and timelines
+                  {{ $t('WeTextOne') }}
                 </div>
               </div>
               <div class="services__item">
                 <div class="services__item-title">
-                  Custom Software Services
+                  {{ $t('WeSubtitleTwo') }}
                 </div>
                 <div class="services__item-text">
-                  We provide custom software services using emerging technologies. It means that we choose a variant that suits exactly your case
+                  {{ $t('WeTextTwo') }}
                 </div>
               </div>
               <div class="services__item">
                 <div class="services__item-title">
-                  Web Development
+                  {{ $t('WeSubtitleThree') }}
                 </div>
                 <div class="services__item-text">
-                  Powerful, flexible, customizable, responsive, mobile-friendly, affordable, launch in record time
+                  {{ $t('WeTextThree') }}
                 </div>
               </div>
               <div class="services__item">
                 <div class="services__item-title">
-                  UI/UX Design
+                  {{ $t('WeSubtitleFour') }}
                 </div>
                 <div class="services__item-text">
-                  We will create your brand identity with an eminently crafted visual strategy to maximize all opportunities of your business growing
+                  {{ $t('WeTextFour') }}
                 </div>
               </div>
             </div>

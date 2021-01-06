@@ -7,25 +7,24 @@
           <div class="preview__inner section__inner">
             <div class="preview__content">
               <h1 class="preview__title">
-                Create <span class="lavanda-color"> the best conditions</span> for your business with our
-                software solutions
+                {{ $t('MainTitleOne') }} <span class="lavanda-color"> {{ $t('MainTitleOneSpan') }}</span> {{ $t('MaintitleOneMore') }}
               </h1>
               <ul class="preview__list list">
                 <li class="preview__list-item list__item">
-                  Web Development
+                  {{ $t('MainListOne') }}
                 </li>
                 <li class="preview__list-item list__item">
-                  Mobile Apps Development
+                  {{ $t('MainListTwo') }}
                 </li>
                 <li class="preview__list-item list__item">
-                  Custom Software Services
+                  {{ $t('MainListThree') }}
                 </li>
                 <li class="preview__list-item list__item">
-                  UI/UX Design
+                  {{ $t('MainListFour') }}
                 </li>
               </ul>
-              <nuxt-link to="/contacts" class="preview__link button-link">
-                Get a Free Offer
+              <nuxt-link :to="localePath('/contacts')" class="preview__link button-link">
+                {{ $t('FreeOffer') }}
               </nuxt-link>
             </div>
             <div class="preview__img">
@@ -506,7 +505,7 @@
         <div class="container">
           <div class="clients__inner ">
             <h2 class="clients__title">
-              Our Clients
+              {{ $t('OurClients') }}
             </h2>
             <ul class="clients__items">
               <li class="clients__item">
@@ -531,19 +530,14 @@
             <div class="web-development__inner section__inner">
               <div class="web-development__content">
                 <h2 class="web-development__title">
-                  Web Development
+                  {{ $t('MainTwoTitle') }}
                 </h2>
                 <div class="web-development__text text">
                   <p class="web-development__text-item text-item">
-                    Powerful, flexible, customizable, responsive, mobile-friendly, affordable, launch in record time.
+                    {{ $t('MainTwoTextOne') }}
                   </p>
                   <p class="web-development__text-item text-item">
-                    Our web development solutions handle all the above. Trusted for over four years, we are creating a
-                    new
-                    way to build
-                    a fantastic and reliable product that will produce tangible results for you and top-end solutions
-                    for
-                    your users.
+                    {{ $t('MainTwoTextTwo') }}
                   </p>
                 </div>
               </div>
@@ -561,17 +555,14 @@
               </div>
               <div class="mobile-development__content">
                 <h2 class="mobile-development__title">
-                  Mobile Apps Development
+                  {{ $t('MaintitleThree') }}
                 </h2>
                 <div class="mobile-development__text text">
                   <p class="text-item">
-                    As proven app developers, we empower end to end mobile solutions—both native and hybrid, regarding
-                    your goals, budget, and timelines.
+                    {{ $t('MainThreeTextOne') }}
                   </p>
                   <p class="text-item">
-                    Our in-depth expertise in narrow niches allows us to see and use the opportunities others are
-                    missing.
-                    As a result, you get a unique mobile app that will take off—right at your fingertips.
+                    {{ $t('MainThreeTextTwo') }}
                   </p>
                 </div>
               </div>
@@ -583,17 +574,14 @@
             <div class="services__inner section__inner">
               <div class="services__content">
                 <h2 class="services__title">
-                  Custom Software Services
+                  {{ $t('MaintitleFour') }}
                 </h2>
                 <div class="services__text text">
                   <p class="services__text-item text-item">
-                    We provide custom software services using emerging technologies. It means that we choose a variant
-                    that suits exactly your case.
+                    {{ $t('MainFourTextOne') }}
                   </p>
                   <p class="services__text-item text-item">
-                    Thus, you can focus on your business targets, succeed, and do not worry about any technical issues
-                    as
-                    we ensure your software concept full realization.
+                    {{ $t('MainFourTextTwo') }}
                   </p>
                 </div>
               </div>
@@ -611,17 +599,14 @@
               </div>
               <div class="design__content">
                 <h2 class="design__title">
-                  UI/UX Design
+                  {{ $t('MaintitleFive') }}
                 </h2>
                 <div class="design__text text">
                   <p class="design__text-item text-item">
-                    Design is no longer about the wow factor. UI/UX Design is about providing personalization,
-                    simplicity,
-                    convenience, minimalism, engagement, and accessibility.
+                    {{ $t('MainFiveTextOne') }}}
                   </p>
                   <p class="design__text-item text-item">
-                    We will create your brand identity with an eminently crafted visual strategy to maximize all
-                    opportunities of your business growing.
+                    {{ $t('MainFiveTextTwo') }}
                   </p>
                 </div>
               </div>
@@ -793,7 +778,7 @@
         <div class="container">
           <div class="stack__inner">
             <h2 class="stack__title">
-              Tech Stack
+              {{ $t('TechStack') }}
             </h2>
             <Tech />
           </div>
@@ -807,12 +792,11 @@
         <div class="container">
           <div class="cta__inner">
             <p class="cta__text">
-              <span class="lavanda-color">Tell us about your project.</span> We know how to incorporate the tech
-              solutions that best
-              suit your case. Just drop us a line to get yours!
+              <span class="lavanda-color">{{ $t('TellAboutSpan') }}</span>
+              {{ $t('TellAbout') }}
             </p>
-            <nuxt-link to="/contacts" class="cta__link button-link">
-              Contact Us</a>
+            <nuxt-link :to="localePath('/contacts')" class="cta__link button-link">
+              {{ $t('ContactUs') }}
             </nuxt-link>
           </div>
         </div>
@@ -853,16 +837,16 @@
             </div>
             <div class="works__content">
               <h2 class="works__title">
-                Our Works
+                {{ $t('OurWorks') }}
               </h2>
               <h3 class="works__subtitle">
-                The Best App Ever
+                {{ $t('OurWorksTitle') }}
               </h3>
               <p class="works__text">
-                The short but bright description of the best App ever
+                {{ $t('OurWorksText') }}
               </p>
-              <nuxt-link to="/our_works" class="works__link button-link">
-                See Full Presentation
+              <nuxt-link :to="localePath('/our_works')" class="works__link button-link">
+                {{ $t('OurWorksButton') }}
               </nuxt-link>
             </div>
           </div>
@@ -872,7 +856,7 @@
         <div class="container">
           <div class="testimonials__inner">
             <h2 class="testimonials__title">
-              Testimonials
+              {{ $t('Testimonials') }}
             </h2>
             <div class="testimonials__slider-wrapper">
               <Swiper ref="testimonialsSlider" class="testimonials__slider" :options="testimonialsSliderOptions">
@@ -883,11 +867,10 @@
                   </div>
                   <div class="testimonials__slider-item-text">
                     <p class="testimonials__slider-item-text-item">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      {{ $t('ReviewTextOneOne') }}
                     </p>
                     <p class="testimonials__slider-item-text-item">
-                      Eros sagittis elementum arcu pellentesque eget tristique. Faucibus sit risus a eu lacus nibh neque
-                      vitae.
+                      {{ $t('ReviewTextOneTwo') }}
                     </p>
                   </div>
                 </Swiper-slide>
@@ -898,11 +881,10 @@
                   </div>
                   <div class="testimonials__slider-item-text">
                     <p class="testimonials__slider-item-text-item">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      {{ $t('ReviewTextTwoOne') }}
                     </p>
                     <p class="testimonials__slider-item-text-item">
-                      Eros sagittis elementum arcu pellentesque eget tristique. Faucibus sit risus a eu lacus nibh neque
-                      vitae.
+                      {{ $t('ReviewTextTwoTwo') }}
                     </p>
                   </div>
                 </Swiper-slide>
@@ -913,11 +895,10 @@
                   </div>
                   <div class="testimonials__slider-item-text">
                     <p class="testimonials__slider-item-text-item">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      {{ $t('ReviewTextThreeOne') }}
                     </p>
                     <p class="testimonials__slider-item-text-item">
-                      Eros sagittis elementum arcu pellentesque eget tristique. Faucibus sit risus a eu lacus nibh neque
-                      vitae.
+                      {{ $t('ReviewTextThreeTwo') }}
                     </p>
                   </div>
                 </Swiper-slide>
@@ -1066,7 +1047,7 @@
         </div>
         <div class="title">
           <h2 class="team__title">
-            Our Team
+            {{ $t('OurTeam') }}
           </h2>
         </div>
         <div class="content team__content">
@@ -1076,8 +1057,8 @@
           <div class="team__prof">
             {{ team[teamIndex].prof }}
           </div>
-          <nuxt-link to="/we" class="button-link team__button">
-            Get Acquainted
+          <nuxt-link :to="localePath('/we')" class="button-link team__button">
+            {{ $t('GetAcquainted') }}
           </nuxt-link>
         </div>
       </section>
@@ -1525,22 +1506,22 @@
 <script>
 
 export default {
+
   data () {
     return {
       teamIndex: 0,
       team: {
         0: {
-          name: 'Valera Grip',
-          prof: 'Chief Project Officer'
+          name: this.$i18n.t('OurTeamNameOne'),
+          prof: this.$i18n.t('OurTeamProfOne')
         },
         1: {
-          name: 'Roman Boboyan',
-          prof: 'Chief Technology Officer'
+          name: this.$i18n.t('OurTeamNameThree'),
+          prof: this.$i18n.t('OurTeamProfThree')
         },
         2: {
-          name: 'Maria Shanny',
-          prof: 'UX/UI Designer'
-
+          name: this.$i18n.t('OurTeamNameTwo'),
+          prof: this.$i18n.t('OurTeamProfTwo')
         }
       },
       phoneSliderOptions: {
@@ -1602,6 +1583,7 @@ export default {
       botom: false
     }
   },
+
   beforeMount  () {
     window.addEventListener('scroll', this.handleScroll)
   },

@@ -5,13 +5,13 @@
       <section class="preview">
         <div class="container">
           <h1 class="preview__title title">
-            Join The <span class="lavanda-color">OXIOS</span> Team
+            {{ $t('CareerTitleOne') }} <span class="lavanda-color">OXIOS</span> {{ $t('CareerTitleTwo') }}
           </h1>
           <p class="preview__text">
-            Today, OXIOS is a team that consists of quality code, effective management, creative marketing, and design. We design, test, create, and 100% responsible for the result.
+            {{ $t('CareerTextOne') }}
           </p>
           <p class="preview__text">
-            Our workflow combines exciting projects and ongoing pro-growth. We want to create the future today! We are not just looking for bright talents. We are looking for you to become a part of our team.
+            {{ $t('CareerTextTwo') }}
           </p>
         </div>
       </section>
@@ -19,7 +19,7 @@
         <div class="container">
           <div class="advantages__inner">
             <h2 class="advantages__title title">
-              Why Join <span class="lavanda-color">OXIOS</span>
+              {{ $t('CareerWhy') }} <span class="lavanda-color">OXIOS</span>
             </h2>
             <div class="advantages__items">
               <div class="advantages__item">
@@ -29,7 +29,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Pro-growth (webinars, lectures, conferences, courses, workshops)
+                  {{ $t('CareerItemOne') }}
                 </div>
               </div>
               <div class="advantages__item">
@@ -76,7 +76,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Competitive salary
+                  {{ $t('CareerItemTwo') }}
                 </div>
               </div>
               <div class="advantages__item">
@@ -86,7 +86,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Team building activities & corporate parties
+                  {{ $t('CareerItemThree') }}
                 </div>
               </div>
               <div class="advantages__item">
@@ -96,7 +96,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Flexible schedule
+                  {{ $t('CareerItemFour') }}
                 </div>
               </div>
               <div class="advantages__item">
@@ -106,7 +106,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Paid English classes
+                  {{ $t('CareerItemFive') }}
                 </div>
               </div>
               <div class="advantages__item">
@@ -116,7 +116,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Paid gym membership
+                  {{ $t('CareerItemSix') }}
                 </div>
               </div>
               <div class="advantages__item">
@@ -126,9 +126,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Paid vacation
-                  (24 calendar days
-                  per year)
+                  {{ $t('CareerItemSeven') }}
                 </div>
               </div>
               <div class="advantages__item">
@@ -138,7 +136,7 @@
                   </svg>
                 </div>
                 <div class="advantages__text">
-                  Paid sick days
+                  {{ $t('CareerItemNight') }}
                 </div>
               </div>
             </div>
@@ -149,11 +147,11 @@
         <div class="container">
           <div class="job__inner">
             <h2 class="job__title title">
-              Job Openings
+              {{ $t('CareerJob') }}
             </h2>
             <ul class="job__list">
               <li class="job__item">
-                <nuxt-link class="job__item-link" to="career_description">
+                <nuxt-link class="job__item-link" :to="localePath('/career_description')">
                   Project Manager
                 </nuxt-link>
               </li>

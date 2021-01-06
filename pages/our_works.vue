@@ -5,13 +5,13 @@
       <div class="container">
         <section class="works__inner">
           <h1 class="works__title">
-            Our Works
+            {{ $t('WorkTitle') }}
           </h1>
           <article class="works-item">
             <img class="works-item__img" src="~/static/images/services.png" alt="">
             <div class="works-item__text">
               <h2 class="works-item__title">
-                Developed the service for interior designers and architects «ProInterno»
+                {{ $t('WorktitleOne') }}
               </h2>
               <ul class="works-item__list">
                 <li class="works-item__list-item">
@@ -25,7 +25,7 @@
                 </li>
               </ul>
               <button class="works-item__button button">
-                View the Presentation
+                {{ $t('WorkBtn') }}
               </button>
             </div>
           </article>
@@ -33,7 +33,7 @@
             <img class="works-item__img" src="~/static/images/web-development.png" alt="">
             <div class="works-item__text">
               <h2 class="works-item__title">
-                Developed multilanding for selling the jewelry caskets
+                {{ $t('WorktitleTwo') }}
               </h2>
               <ul class="works-item__list">
                 <li class="works-item__list-item">
@@ -50,7 +50,7 @@
                 </li>
               </ul>
               <button class="works-item__button button">
-                View the Presentation
+                {{ $t('WorkBtn') }}
               </button>
             </div>
           </article>
@@ -58,7 +58,7 @@
             <img class="works-item__img" src="~/static/images/mobile-development.png" alt="">
             <div class="works-item__text">
               <h2 class="works-item__title">
-                Redesigned App of shop «Shanghai Pot»
+                {{ $t('WorktitleThree') }}
               </h2>
               <ul class="works-item__list">
                 <li class="works-item__list-item">
@@ -72,7 +72,7 @@
                 </li>
               </ul>
               <button class="works-item__button button">
-                View the Presentation
+                {{ $t('WorkBtn') }}
               </button>
             </div>
           </article>

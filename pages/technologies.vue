@@ -5,10 +5,10 @@
       <div class="container">
         <div class="technologies__inner">
           <h1 class="technologies__title">
-            Technologies
+            {{ $t('TechnologiesTitle') }}
           </h1>
           <div class="technologies__text">
-            We develop software that covers multiple platforms — web, Android/iOS, smart TV, wearables, IoT.
+            {{ $t('TechnologiesText') }}
           </div>
           <Tech />
         </div>

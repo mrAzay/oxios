@@ -3,10 +3,10 @@
     <div class="container">
       <div class="contact-text__inner">
         <div class="contact-text__title">
-          Do you wnat to discuss your project?
+          {{ $t('ContactTextTitle') }}
         </div>
-        <nuxt-link to="/contacts" class="contact-text__button button-link">
-          Contact Us
+        <nuxt-link :to="localePath('/contacts')" class="contact-text__button button-link">
+          {{ $t('ContactTextButton') }}
         </nuxt-link>
       </div>
     </div>

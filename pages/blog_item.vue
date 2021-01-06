@@ -8,12 +8,12 @@
             <div class="blog__preview">
               <img src="~/static/images/blog1-big.jpg" alt="" class="blog__img">
               <h1 class="blog__title">
-                Checklist On App Analytics To Get Maximum Out Of Your Project
+                {{ $t('BlogItemTitle') }}
               </h1>
             </div>
             <ul class="blog__socials">
               <li class="blog__social-title">
-                Share
+                {{ $t('Share') }}
               </li>
               <li class="blog__social">
                 <a href="#" class="blog__link">
@@ -43,34 +43,34 @@
             </ul>
             <div class="discription">
               <p class="discription__text">
-                Intense intrusion of smartphones onto digital market resulted in quick brunch development. Things that ten years ago were inconceivable, now are commonly received.
+                {{ $t('BlogItemTextOne') }}
               </p>
               <p class="discription__text">
-                Since its appearance mobile segment grew and expanded turning into one of the most profitable modern market spheres. Last year, it gained 461.7 billion dollars in revenue. This amount is forecasted to grow up to more than 935 billion dollars by 2023.
+                {{ $t('BlogItemTextTwo') }}
               </p>
               <p class="discription__text">
-                Mobile applications penetrate into our daily life making routines less tedious. According to statistics, Google Play and Apple App Store offer about 2 million various apps that are called to make customers’ life better. We have already discussed important criteria to rely on while choosing application type and singled out trends for mobile development, spotlighting most efficient mobile app KPIs.
+                {{ $t('BlogItemTextThree') }}
               </p>
               <p class="discription__text">
-                Still, just having an application is not enough for successful business running. To get maximum out of project you have to know how efficient it is. Thus, profound app analytics understanding stands for one more step towards your success.
+                {{ $t('BlogItemTextFoure') }}
               </p>
               <p class="discription__text">
-                In this post, OpenGeekLab will tell about key mobile app analytics metrics and disclose secrets on how different mobile app metrics tools actually work. Keep on reading!
+                {{ $t('BlogItemTextFive') }}
               </p>
               <div class="discription-analitic">
                 <h2 class="discription-analitic__title">
-                  App Analytics Metrics You Should Consider to Boost Your Product Success
+                  {{ $t('BlogItemDescrTitle') }}
                 </h2>
                 <ul class="discription-analitic__list">
                   <li class="discription-analitic__item">
                     <h3 class="discription-analitic__item-title">
-                      1. Downloads
+                      1. {{ $t('BlogItemDescrTextTitle') }}
                     </h3>
                     <p class="discription-analitic__item-text">
-                      Installs number stands among basic metrics to trace product’s success. It shows how many users actually downloaded the app from mobile store. These numbers are called to represent most general picture concerning analytics without further details. Downloads also influence app’s position in rating or search results.
+                      {{ $t('BlogItemDescrTextOne') }}
                     </p>
                     <p class="discription-analitic__item-text">
-                      However, downloads number is not synonymous to app active users. This metrics does not reflect whether the customer uses program or not. It might be installed due to peculiar promotion company and deleted right after downloading, or simply did not reach user satisfaction. On the basis of download analytics further metrics are counted.
+                      {{ $t('BlogItemDescrTextTwo') }}
                     </p>
                   </li>
                 </ul>

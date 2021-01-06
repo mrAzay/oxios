@@ -6,11 +6,11 @@
         <div class="container">
           <div class="blog__inner">
             <h2 class="blog__title">
-              Our Blog
+              {{ $t('BlogTitle') }}
             </h2>
             <div class="blog__filter">
               <button class="blog__filter-content" @click="$store.commit('modal', 'blogFilter')">
-                Latest
+                {{ $t('FilterOne') }}
                 <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13 0.701218L7 6.83061L1 0.701218" stroke="#FF6E6C" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -18,92 +18,92 @@
               <ul v-if="$store.state.blogFilter" class="blog__filter-list">
                 <li class="blog__filter-item">
                   <button class="blog__filter-content" @click="$store.commit('modal', 'blogFilter')">
-                    Latest
+                    {{ $t('FilterOne') }}
                   </button>
                 </li>
                 <li class="blog__filter-item">
                   <button class="blog__filter-content" @click="$store.commit('modal', 'blogFilter')">
-                    Latest
+                    {{ $t('FilterOne') }}
                   </button>
                 </li>
                 <li class="blog__filter-item">
                   <button class="blog__filter-content" @click="$store.commit('modal', 'blogFilter')">
-                    Latest
+                    {{ $t('FilterOne') }}
                   </button>
                 </li>
               </ul>
             </div>
             <div class="blog__items">
               <article class="blog__item">
-                <nuxt-link to="blog_item">
+                <nuxt-link :to="localePath('/blog_item')">
                   <img src="~/static/images/blog1.jpg" alt="" class="blog__item-img">
                   <h3 class="blog__item-title">
-                    Checklist On App Analytics To Get Maximum Out Of Your Project
+                    {{ $t('BlogTitleItemOne') }}
                   </h3>
                   <p class="blog__item-text">
-                    Intense intrusion of smartphones onto digital market resulted in quick brunch development. Things that ten years ago were inconceivable, now are commonly received...
+                    {{ $t('BlogTextItemOne') }}
                   </p>
                 </nuxt-link>
               </article>
               <article class="blog__item">
-                <nuxt-link to="blog_item">
+                <nuxt-link :to="localePath('/blog_item')">
                   <img src="~/static/images/blog2.jpg" alt="" class="blog__item-img">
                   <h3 class="blog__item-title">
-                    Virtual Reality In Medicine: Top 13 Promising Use Cases
+                    {{ $t('BlogTitleItemTwo') }}
                   </h3>
                   <p class="blog__item-text">
-                    Prospects and results of VR show that one can use this technology almost everywhere. It violates physics laws, overcomes boundaries between fiction and reality, whether it is traveling through space...
+                    {{ $t('BlogTextItemTwo') }}
                   </p>
-                </nuxt-link>>
+                </nuxt-link>
               </article>
               <article class="blog__item">
-                <nuxt-link to="blog_item">
+                <nuxt-link :to="localePath('/blog_item')">
                   <img src="~/static/images/blog3.jpg" alt="" class="blog__item-img">
                   <h3 class="blog__item-title">
-                    How To Come Up With Travel App Idea: Top 16 Insights To Get Inspired
+                    {{ $t('BlogTitleItemThree') }}
                   </h3>
                   <p class="blog__item-text">
-                    Tourism industry is continually reforming which leads to travel app phenomenon expansion. Modern travelers no longer want to waste lot of time planning trips, whether it is a vacation or a business case...
+                    {{ $t('BlogTextItemThree') }}
                   </p>
-                </nuxt-link>>
+                </nuxt-link>
               </article>
               <article class="blog__item">
-                <nuxt-link to="blog_item">
+                <nuxt-link :to="localePath('/blog_item')">
                   <img src="~/static/images/blog4.jpg" alt="" class="blog__item-img">
                   <h3 class="blog__item-title">
-                    4 Tips On How To Choose A Tech Stack For Your Project
+                    {{ $t('BlogTitleItemFour') }}
                   </h3>
                   <p class="blog__item-text">
-                    The project’s purpose determines what tech stack to apply. Not the other way around. Some features cannot be developed on a specific toolset. If you choose the technology stack without a strategic approach...
+                    {{ $t('BlogTextItemFour') }}
                   </p>
                 </nuxt-link>
               </article>
 
               <article class="blog__item">
-                <nuxt-link to="blog_item">
+                <nuxt-link :to="localePath('/blog_item')">
                   <img src="~/static/images/blog5.jpg" alt="" class="blog__item-img">
                   <h3 class="blog__item-title">
-                    How Your Company Can Solve Delivery Challenges
+                    {{ $t('BlogTitleItemFive') }}
                   </h3>
                   <p class="blog__item-text">
-                    E-commerce trading more and more gets popular in modern circumstances triggering a fast growth of on-demand delivery services and making the last mile transportation niche boom...
+                    {{ $t('BlogTextItemFive') }}
                   </p>
-                </nuxt-link>>
+                </nuxt-link>
               </article>
               <article class="blog__item">
-                <nuxt-link to="blog_item">
+                <nuxt-link :to="localePath('/blog_item')">
                   <img src="~/static/images/blog6.jpg" alt="" class="blog__item-img">
                   <h3 class="blog__item-title">
-                    A Comprehensive Guide To Container Management Development
+                    {{ $t('BlogTitleItemSix') }}
                   </h3>
                   <p class="blog__item-text">
-                    Shipping has long become an essential part of the modern e-commerce market, making efficient container management indispensable...
+                    {{ $t('BlogTextItemSix') }}
                   </p>
                 </nuxt-link>
               </article>
             </div>
             <button class="blog__more">
-              Show more
+              {{ $t('ShowMore') }}
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 7V15M7 11H15M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="#FF6E6C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>

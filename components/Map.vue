@@ -7,17 +7,17 @@
     <div class="container">
       <div class="map__inner">
         <h2 class="map__title">
-          Drop Us a Line
+          {{ $t('Email') }}
         </h2>
         <a href="mailto:info@oxios.com" class="map__text map__text-link">
           info@oxios.com
         </a>
         <h2 class="map__title">
-          Our Office
+          {{ $t('Office') }}
         </h2>
         <p class="map__text">
-          Ukraine, Zaporizhzhia <br>
-          Soborny ave., 158 <br>
+          {{ $t('OfficeAdressOne') }} <br>
+          {{ $t('OfficeAdressTwo') }} <br>
           69000
         </p>
       </div>

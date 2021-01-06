@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <nuxt-link class="header__logo" to="/">
+        <nuxt-link class="header__logo" :to="localePath('/')">
           <img class="logo__img" src="~/static/images/logo.svg">
         </nuxt-link>
         <ul class="header__burger" @click="mobileMenu = !mobileMenu">
@@ -21,47 +21,63 @@
               </button>
             </li>
             <li class="header__nav-item">
-              <nuxt-link to="/our_works" class="header__nav-link">
-                Our Works
+              <nuxt-link :to="localePath('/our_works')" class="header__nav-link">
+                {{ $t('HeaderLinkOne') }}
               </nuxt-link>
             </li>
             <li class="header__nav-item">
-              <nuxt-link to="/technologies" class="header__nav-link">
-                Technologies
+              <nuxt-link :to="localePath('/technologies')" class="header__nav-link">
+                {{ $t('HeaderLinkTwo') }}
               </nuxt-link>
             </li>
             <li class="header__nav-item">
               <button class="header__nav-link header__nav-link-btn" :class="{'header__nav-link-btn--active': dropdown}" @click="dropdown = !dropdown">
-                About Us<img class="header__nav-link-btn-img" src="~/static/images/arrow-down.svg">
+                {{ $t('HeaderLinkThree') }}<img class="header__nav-link-btn-img" src="~/static/images/arrow-down.svg">
               </button>
               <div class="header__nav-item-droppdown" :class="{'header__nav-item-droppdown--active': dropdown}">
-                <nuxt-link to="/we" class="header__nav-item-droppdown-link">
-                  Who We Are
+                <nuxt-link :to="localePath('/we')" class="header__nav-item-droppdown-link">
+                  {{ $t('HeaderLinkThreeOne') }}
                 </nuxt-link>
-                <nuxt-link to="/career" class="header__nav-item-droppdown-link">
-                  Career
+                <nuxt-link :to="localePath('/career')" class="header__nav-item-droppdown-link">
+                  {{ $t('HeaderLinkThreeTwo') }}
                 </nuxt-link>
-                <nuxt-link to="/mission" class="header__nav-item-droppdown-link">
-                  Our Mission
+                <nuxt-link :to="localePath('/mission')" class="header__nav-item-droppdown-link">
+                  {{ $t('HeaderLinkThreeThree') }}
                 </nuxt-link>
               </div>
             </li>
             <li class="header__nav-item">
-              <nuxt-link class="header__nav-link" to="/blog">
-                Blog
+              <nuxt-link :to="localePath('/blog')" class="header__nav-link">
+                {{ $t('HeaderLinkFour') }}
+              </nuxt-link>
+            </li>
+            <li class="header__nav-item">
+              <nuxt-link
+                v-for="locale in availableLocales"
+                :key="locale.code"
+                :to="switchLocalePath(locale.code)"
+              >
+                {{ locale.name }}
+              </nuxt-link>
+            </li>
+            <li class="header__nav-item">
+              <nuxt-link :to="localePath('/contacts')" class="header__link button-link">
+                {{ $t('HeaderButton') }}
               </nuxt-link>
             </li>
           </ul>
-          <nuxt-link class="header__link button-link" to="/contacts">
-            Hire Us
-          </nuxt-link>
         </nav>
       </div>
+
+      </nav>
+    </div>
     </div>
   </header>
 </template>
 
 <style  lang="sass">
+  a
+    color: #1F1235
   .close
     display: none
   .header
@@ -119,12 +135,9 @@
           align-items: center
           &-img
             margin-left: 10px
-    &__link
-      margin-left: 106px
 
 @media (max-width: 1200px)
-  .header__link
-    margin-left: 40px
+
   .header__nav-item + .header__nav-item
     margin-left: 40px
 @media (max-width: 900px)
@@ -159,6 +172,7 @@
     position: static
     padding: 0
     background-color: transparent
+    margin: 0 auto
   .header__nav-item-droppdown-link + .header__nav-item-droppdown-link
     margin-top: 20px
   .header__nav-link-btn
@@ -187,6 +201,12 @@ export default {
       dropdown: false,
       mobileMenu: false
     }
+  },
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
   }
+
 }
 </script>
