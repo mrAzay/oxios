@@ -5,9 +5,10 @@
       <section class="preview section">
         <div class="container">
           <div class="preview__inner section__inner">
-            <div class="preview__content">
+            <div data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" class="preview__content">
               <h1 class="preview__title">
-                {{ $t('MainTitleOne') }} <span class="lavanda-color"> {{ $t('MainTitleOneSpan') }}</span> {{ $t('MaintitleOneMore') }}
+                {{ $t('MainTitleOne') }} <span class="lavanda-color"> {{ $t('MainTitleOneSpan') }}</span> {{
+                  $t('MaintitleOneMore') }}
               </h1>
               <ul class="preview__list list">
                 <li class="preview__list-item list__item">
@@ -27,7 +28,7 @@
                 {{ $t('FreeOffer') }}
               </nuxt-link>
             </div>
-            <div class="preview__img">
+            <div data-aos="fade-left" data-aos-offset="0" data-aos-duration="1000" class="preview__img">
               <svg width="917" height="564" viewBox="0 0 917 564" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                   <path
@@ -35,7 +36,14 @@
                     clip-rule="evenodd"
                     d="M545.126 71.9341C630.033 93.846 721.694 145.089 737.405 231.664C753.387 319.728 722.337 392.699 676.452 425.795C603.115 478.689 481.898 495.726 408.627 492.515C331.115 489.119 255.06 455.11 219.5 407.5C159 326.5 159.676 227.36 225 219.5C345.5 205 343.5 174 369.524 136.725C407.114 82.882 481.787 55.5884 545.126 71.9341Z"
                     fill="#F4F3F8"
-                  />
+                  >
+                    <animate
+                      attributeName="d"
+                      dur="3s"
+                      repeatCount="indefinite"
+                      to="M358.817 489.743C277.487 456.958 193.281 394.213 188.98 306.329C184.606 216.934 224.895 148.628 274.7 121.791C354.302 78.8995 476.706 77.7962 548.934 90.5233C625.343 103.987 696.32 147.612 725.377 199.448C774.811 287.639 761.228 385.845 695.437 385.131C574.074 383.812 572.019 414.808 541.362 448.376C497.079 496.864 419.488 514.199 358.817 489.743Z"
+                    />
+                  </path>
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -541,7 +549,11 @@
                   </p>
                 </div>
               </div>
-              <div class="web-development__img">
+              <div
+                class="web-development__img"
+                data-aos-offset="600"
+                data-aos="fade-left"
+              >
                 <img src="~/static/images/web-development.png" alt="">
               </div>
             </div>
@@ -550,7 +562,7 @@
         <section class="mobile-development section">
           <div class="container">
             <div class="mobile-development__inner section__inner">
-              <div class="mobile-development__img">
+              <div class="mobile-development__img" data-aos-offset="600" data-aos="fade-right">
                 <img src="~/static/images/mobile-development.png" alt="">
               </div>
               <div class="mobile-development__content">
@@ -585,7 +597,7 @@
                   </p>
                 </div>
               </div>
-              <div class="services__img">
+              <div class="services__img" data-aos-offset="600" data-aos="fade-left">
                 <img src="~/static/images/services.png" alt="">
               </div>
             </div>
@@ -594,7 +606,7 @@
         <section class="section design">
           <div class="container">
             <div class="design__inner section__inner">
-              <div class="design__img">
+              <div class="design__img" data-aos-offset="600" data-aos="fade-right">
                 <img src="~/static/images/design.png" alt="">
               </div>
               <div class="design__content">
@@ -614,42 +626,149 @@
           </div>
         </section>
         <svg width="1733" height="2273" viewBox="0 0 1733 2273" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1650.68 2272.09C1695.8 2272.09 1732.37 2250.82 1732.37 2224.57C1732.37 2198.32 1695.8 2177.04 1650.68 2177.04C1605.57 2177.04 1569 2198.32 1569 2224.57C1569 2250.82 1605.57 2272.09 1650.68 2272.09Z" fill="#F4F3F8" />
-          <path d="M1650.63 2253.74C1681.84 2253.74 1707.13 2239.05 1707.13 2220.94C1707.13 2202.83 1681.84 2188.14 1650.63 2188.14C1619.43 2188.14 1594.13 2202.83 1594.13 2220.94C1594.13 2239.05 1619.43 2253.74 1650.63 2253.74Z" fill="white" />
-          <path d="M1650.63 2239.61C1668.58 2239.61 1683.13 2231.03 1683.13 2220.44C1683.13 2209.85 1668.58 2201.26 1650.63 2201.26C1632.68 2201.26 1618.13 2209.85 1618.13 2220.44C1618.13 2231.03 1632.68 2239.61 1650.63 2239.61Z" fill="#F4F3F8" />
-          <path d="M237.684 1594.95C282.796 1594.95 319.367 1573.67 319.367 1547.43C319.367 1521.18 282.796 1499.9 237.684 1499.9C192.571 1499.9 156 1521.18 156 1547.43C156 1573.67 192.571 1594.95 237.684 1594.95Z" fill="#F4F3F8" />
-          <path d="M237.634 1576.6C268.838 1576.6 294.134 1561.91 294.134 1543.8C294.134 1525.69 268.838 1511 237.634 1511C206.429 1511 181.134 1525.69 181.134 1543.8C181.134 1561.91 206.429 1576.6 237.634 1576.6Z" fill="white" />
-          <path d="M237.634 1562.47C255.583 1562.47 270.134 1553.89 270.134 1543.3C270.134 1532.71 255.583 1524.12 237.634 1524.12C219.684 1524.12 205.134 1532.71 205.134 1543.3C205.134 1553.89 219.684 1562.47 237.634 1562.47Z" fill="#F4F3F8" />
-          <g>
-            <path d="M1650.68 940.013C1695.8 940.013 1732.37 918.735 1732.37 892.488C1732.37 866.24 1695.8 844.963 1650.68 844.963C1605.57 844.963 1569 866.24 1569 892.488C1569 918.735 1605.57 940.013 1650.68 940.013Z" fill="#F4F3F8" />
-            <path d="M1650.63 921.658C1681.84 921.658 1707.13 906.974 1707.13 888.861C1707.13 870.747 1681.84 856.063 1650.63 856.063C1619.43 856.063 1594.13 870.747 1594.13 888.861C1594.13 906.974 1619.43 921.658 1650.63 921.658Z" fill="white" />
-            <path d="M1650.63 907.53C1668.58 907.53 1683.13 898.946 1683.13 888.356C1683.13 877.767 1668.58 869.182 1650.63 869.182C1632.68 869.182 1618.13 877.767 1618.13 888.356C1618.13 898.946 1632.68 907.53 1650.63 907.53Z" fill="#F4F3F8" />
+          <g id="step4">
+            <path
+              d="M1650.68 2272.09C1695.8 2272.09 1732.37 2250.82 1732.37 2224.57C1732.37 2198.32 1695.8 2177.04 1650.68 2177.04C1605.57 2177.04 1569 2198.32 1569 2224.57C1569 2250.82 1605.57 2272.09 1650.68 2272.09Z"
+              fill="#F4F3F8"
+            />
+            <path
+              d="M1650.63 2253.74C1681.84 2253.74 1707.13 2239.05 1707.13 2220.94C1707.13 2202.83 1681.84 2188.14 1650.63 2188.14C1619.43 2188.14 1594.13 2202.83 1594.13 2220.94C1594.13 2239.05 1619.43 2253.74 1650.63 2253.74Z"
+              fill="white"
+            />
+            <path
+              d="M1650.63 2239.61C1668.58 2239.61 1683.13 2231.03 1683.13 2220.44C1683.13 2209.85 1668.58 2201.26 1650.63 2201.26C1632.68 2201.26 1618.13 2209.85 1618.13 2220.44C1618.13 2231.03 1632.68 2239.61 1650.63 2239.61Z"
+              fill="#F4F3F8"
+            />
+          </g>
+          <g id="step3">
+            <path
+              d="M237.684 1594.95C282.796 1594.95 319.367 1573.67 319.367 1547.43C319.367 1521.18 282.796 1499.9 237.684 1499.9C192.571 1499.9 156 1521.18 156 1547.43C156 1573.67 192.571 1594.95 237.684 1594.95Z"
+              fill="#F4F3F8"
+            />
+            <path
+              d="M237.634 1576.6C268.838 1576.6 294.134 1561.91 294.134 1543.8C294.134 1525.69 268.838 1511 237.634 1511C206.429 1511 181.134 1525.69 181.134 1543.8C181.134 1561.91 206.429 1576.6 237.634 1576.6Z"
+              fill="white"
+            />
+            <path
+              d="M237.634 1562.47C255.583 1562.47 270.134 1553.89 270.134 1543.3C270.134 1532.71 255.583 1524.12 237.634 1524.12C219.684 1524.12 205.134 1532.71 205.134 1543.3C205.134 1553.89 219.684 1562.47 237.634 1562.47Z"
+              fill="#F4F3F8"
+            />
+          </g>
+          <g id="step2">
+            <path
+              d="M1650.68 940.013C1695.8 940.013 1732.37 918.735 1732.37 892.488C1732.37 866.24 1695.8 844.963 1650.68 844.963C1605.57 844.963 1569 866.24 1569 892.488C1569 918.735 1605.57 940.013 1650.68 940.013Z"
+              fill="#F4F3F8"
+            />
+            <path
+              d="M1650.63 921.658C1681.84 921.658 1707.13 906.974 1707.13 888.861C1707.13 870.747 1681.84 856.063 1650.63 856.063C1619.43 856.063 1594.13 870.747 1594.13 888.861C1594.13 906.974 1619.43 921.658 1650.63 921.658Z"
+              fill="white"
+            />
+            <path
+              d="M1650.63 907.53C1668.58 907.53 1683.13 898.946 1683.13 888.356C1683.13 877.767 1668.58 869.182 1650.63 869.182C1632.68 869.182 1618.13 877.767 1618.13 888.356C1618.13 898.946 1632.68 907.53 1650.63 907.53Z"
+              fill="#F4F3F8"
+            />
           </g>
           <g id="step1" filter="url(#filter0_d)">
-            <path d="M237.684 269.936C282.796 269.936 319.367 248.658 319.367 222.411C319.367 196.163 282.796 174.886 237.684 174.886C192.571 174.886 156 196.163 156 222.411C156 248.658 192.571 269.936 237.684 269.936Z" fill="#7873AA" />
+            <path
+              d="M237.684 269.936C282.796 269.936 319.367 248.658 319.367 222.411C319.367 196.163 282.796 174.886 237.684 174.886C192.571 174.886 156 196.163 156 222.411C156 248.658 192.571 269.936 237.684 269.936Z"
+              fill="#7873AA"
+            />
           </g>
-          <path d="M237.634 251.581C268.838 251.581 294.134 236.897 294.134 218.784C294.134 200.67 268.838 185.986 237.634 185.986C206.429 185.986 181.134 200.67 181.134 218.784C181.134 236.897 206.429 251.581 237.634 251.581Z" fill="white" />
-          <path d="M237.634 237.453C255.583 237.453 270.134 228.869 270.134 218.279C270.134 207.69 255.583 199.105 237.634 199.105C219.684 199.105 205.134 207.69 205.134 218.279C205.134 228.869 219.684 237.453 237.634 237.453Z" fill="#7873AA" />
+          <path
+            d="M237.634 251.581C268.838 251.581 294.134 236.897 294.134 218.784C294.134 200.67 268.838 185.986 237.634 185.986C206.429 185.986 181.134 200.67 181.134 218.784C181.134 236.897 206.429 251.581 237.634 251.581Z"
+            fill="white"
+          />
+          <path
+            id="path1"
+            d="M237.634 237.453C255.583 237.453 270.134 228.869 270.134 218.279C270.134 207.69 255.583 199.105 237.634 199.105C219.684 199.105 205.134 207.69 205.134 218.279C205.134 228.869 219.684 237.453 237.634 237.453Z"
+            fill="#7873AA"
+          />
 
-          <path d="M234 289.5C233.333 366.333 335.1 520 747.5 520C1263 520 1650.5 596 1650.5 809" stroke="#F4F3F8" stroke-width="4" stroke-dasharray="30 30" />
-          <path d="M234 1601C233.333 1677.83 335.1 1831.5 747.5 1831.5C1263 1831.5 1650.5 1907.5 1650.5 2120.5" stroke="#F4F3F8" stroke-width="4" stroke-dasharray="30 30" />
-          <path d="M1650.5 993C1651.17 1069.83 1549.4 1223.5 1137 1223.5C621.5 1223.5 236.5 1306 236.5 1455.5" stroke="#F4F3F8" stroke-width="4" stroke-dasharray="30 30" />
+          <path
+            d="M234 289.5C233.333 366.333 335.1 520 747.5 520C1263 520 1650.5 596 1650.5 809"
+            stroke="#F4F3F8"
+            stroke-width="4"
+            stroke-dasharray="30 30"
+          />
+          <path
+            d="M234 1601C233.333 1677.83 335.1 1831.5 747.5 1831.5C1263 1831.5 1650.5 1907.5 1650.5 2120.5"
+            stroke="#F4F3F8"
+            stroke-width="4"
+            stroke-dasharray="30 30"
+          />
+          <path
+            d="M1650.5 993C1651.17 1069.83 1549.4 1223.5 1137 1223.5C621.5 1223.5 236.5 1306 236.5 1455.5"
+            stroke="#F4F3F8"
+            stroke-width="4"
+            stroke-dasharray="30 30"
+          />
           <g id="robot" ref="robot">
-            <path d="M270.049 174.352C270.049 201.031 255.508 222.614 237.583 222.614C219.658 222.614 205.117 201.031 205.117 174.352C205.117 147.673 219.658 139.679 237.583 139.679C255.508 139.679 270.049 147.673 270.049 174.352Z" fill="url(#paint0_linear)" />
-            <path d="M237.584 165.721C249.734 165.721 259.583 159.94 259.583 152.809C259.583 145.677 249.734 139.896 237.584 139.896C225.434 139.896 215.585 145.677 215.585 152.809C215.585 159.94 225.434 165.721 237.584 165.721Z" fill="#343150" />
-            <path d="M221.948 147.09C230.584 142.017 244.493 142.017 253.129 147.09C256.674 149.211 258.765 151.794 259.401 154.469C260.31 150.595 258.22 146.629 253.129 143.585C244.493 138.512 230.584 138.512 221.948 143.585C216.857 146.537 214.857 150.595 215.675 154.469C216.403 151.794 218.403 149.211 221.948 147.09Z" fill="#666097" />
-            <rect width="5.28821" height="24.4479" rx="2.64411" transform="matrix(-0.950791 0.309834 0.302856 0.953036 199.155 96.1888)" fill="url(#paint1_linear)" />
-            <path d="M214.927 134.161L214.182 126.184C214.663 122.767 214.276 119.073 213.171 115.788L212.373 107.736L205.679 108.405C205.478 108.438 205.224 108.396 205.023 108.428C203.215 108.721 201.603 110.235 200.408 112.808C198.032 118.286 198.842 126.67 202.303 131.534C204.06 134.004 206.044 135.06 208.032 134.862L214.927 134.161Z" fill="url(#paint2_radial)" />
-            <rect width="5.28821" height="24.4479" rx="2.64411" transform="matrix(0.950791 0.309834 -0.302856 0.953036 278.525 97.2002)" fill="url(#paint3_linear)" />
-            <path d="M262.754 135.172L263.499 127.196C263.017 123.778 263.404 120.084 264.509 116.799L265.308 108.748L272.002 109.416C272.203 109.449 272.457 109.407 272.658 109.439C274.466 109.733 276.078 111.246 277.272 113.819C279.649 119.297 278.838 127.681 275.377 132.546C273.62 135.015 271.637 136.071 269.649 135.874L262.754 135.172Z" fill="url(#paint4_radial)" />
-            <path d="M225.188 114.396C228.803 108.044 228.808 101.18 225.2 99.0664C221.591 96.9524 215.735 100.388 212.12 106.741C208.505 113.093 208.5 119.956 212.109 122.07C215.718 124.184 221.574 120.748 225.188 114.396Z" fill="#BCBEFF" />
-            <path d="M238.857 155.391C257.031 155.391 271.765 140.442 271.765 122.002C271.765 103.562 257.031 88.6136 238.857 88.6136C220.682 88.6136 205.949 103.562 205.949 122.002C205.949 140.442 220.682 155.391 238.857 155.391Z" fill="url(#paint5_radial)" />
-            <path d="M238.857 155.391C257.031 155.391 271.765 140.442 271.765 122.002C271.765 103.562 257.031 88.6136 238.857 88.6136C220.682 88.6136 205.949 103.562 205.949 122.002C205.949 140.442 220.682 155.391 238.857 155.391Z" fill="url(#paint6_linear)" />
-            <path d="M263.556 124.508C263.556 115.817 260.059 106.808 237.083 106.808C213.608 106.808 212.109 115.818 212.109 124.508C212.109 133.198 219.602 142.15 237.083 142.15C254.065 142.15 263.556 133.198 263.556 124.508Z" fill="#343150" />
-            <path d="M247.361 123.542C245.788 124.005 245.467 120.469 247.474 119.297C249.482 118.125 252.674 118.154 254.6 119.386C256.56 120.535 256.063 124.08 254.486 123.631C251.218 122.7 250.219 122.7 247.361 123.542Z" fill="#F4F3F8" />
-            <path d="M227.62 123.542C229.193 124.005 229.515 120.469 227.507 119.297C225.499 118.125 222.307 118.154 220.382 119.386C218.421 120.535 218.918 124.08 220.495 123.631C223.763 122.7 224.762 122.7 227.62 123.542Z" fill="#F4F3F8" />
-            <path d="M282.536 171.538C282.536 186.203 278.508 204.51 272.743 204.232C267.085 203.943 267.588 186.086 267.938 174.215C268.172 166.267 265.315 153.827 271.08 154.104C276.721 154.24 282.536 162.051 282.536 171.538Z" fill="url(#paint7_linear)" />
-            <path d="M192.732 171.538C192.732 186.203 196.759 204.51 202.524 204.232C208.182 203.943 207.679 186.086 207.329 174.215C207.095 166.267 209.952 153.827 204.187 154.104C198.546 154.24 192.732 162.051 192.732 171.538Z" fill="url(#paint8_linear)" />
+            <path
+              d="M270.049 174.352C270.049 201.031 255.508 222.614 237.583 222.614C219.658 222.614 205.117 201.031 205.117 174.352C205.117 147.673 219.658 139.679 237.583 139.679C255.508 139.679 270.049 147.673 270.049 174.352Z"
+              fill="url(#paint0_linear)"
+            />
+            <path
+              d="M237.584 165.721C249.734 165.721 259.583 159.94 259.583 152.809C259.583 145.677 249.734 139.896 237.584 139.896C225.434 139.896 215.585 145.677 215.585 152.809C215.585 159.94 225.434 165.721 237.584 165.721Z"
+              fill="#343150"
+            />
+            <path
+              d="M221.948 147.09C230.584 142.017 244.493 142.017 253.129 147.09C256.674 149.211 258.765 151.794 259.401 154.469C260.31 150.595 258.22 146.629 253.129 143.585C244.493 138.512 230.584 138.512 221.948 143.585C216.857 146.537 214.857 150.595 215.675 154.469C216.403 151.794 218.403 149.211 221.948 147.09Z"
+              fill="#666097"
+            />
+            <rect
+              width="5.28821"
+              height="24.4479"
+              rx="2.64411"
+              transform="matrix(-0.950791 0.309834 0.302856 0.953036 199.155 96.1888)"
+              fill="url(#paint1_linear)"
+            />
+            <path
+              d="M214.927 134.161L214.182 126.184C214.663 122.767 214.276 119.073 213.171 115.788L212.373 107.736L205.679 108.405C205.478 108.438 205.224 108.396 205.023 108.428C203.215 108.721 201.603 110.235 200.408 112.808C198.032 118.286 198.842 126.67 202.303 131.534C204.06 134.004 206.044 135.06 208.032 134.862L214.927 134.161Z"
+              fill="url(#paint2_radial)"
+            />
+            <rect
+              width="5.28821"
+              height="24.4479"
+              rx="2.64411"
+              transform="matrix(0.950791 0.309834 -0.302856 0.953036 278.525 97.2002)"
+              fill="url(#paint3_linear)"
+            />
+            <path
+              d="M262.754 135.172L263.499 127.196C263.017 123.778 263.404 120.084 264.509 116.799L265.308 108.748L272.002 109.416C272.203 109.449 272.457 109.407 272.658 109.439C274.466 109.733 276.078 111.246 277.272 113.819C279.649 119.297 278.838 127.681 275.377 132.546C273.62 135.015 271.637 136.071 269.649 135.874L262.754 135.172Z"
+              fill="url(#paint4_radial)"
+            />
+            <path
+              d="M225.188 114.396C228.803 108.044 228.808 101.18 225.2 99.0664C221.591 96.9524 215.735 100.388 212.12 106.741C208.505 113.093 208.5 119.956 212.109 122.07C215.718 124.184 221.574 120.748 225.188 114.396Z"
+              fill="#BCBEFF"
+            />
+            <path
+              d="M238.857 155.391C257.031 155.391 271.765 140.442 271.765 122.002C271.765 103.562 257.031 88.6136 238.857 88.6136C220.682 88.6136 205.949 103.562 205.949 122.002C205.949 140.442 220.682 155.391 238.857 155.391Z"
+              fill="url(#paint5_radial)"
+            />
+            <path
+              d="M238.857 155.391C257.031 155.391 271.765 140.442 271.765 122.002C271.765 103.562 257.031 88.6136 238.857 88.6136C220.682 88.6136 205.949 103.562 205.949 122.002C205.949 140.442 220.682 155.391 238.857 155.391Z"
+              fill="url(#paint6_linear)"
+            />
+            <path
+              d="M263.556 124.508C263.556 115.817 260.059 106.808 237.083 106.808C213.608 106.808 212.109 115.818 212.109 124.508C212.109 133.198 219.602 142.15 237.083 142.15C254.065 142.15 263.556 133.198 263.556 124.508Z"
+              fill="#343150"
+            />
+            <path
+              d="M247.361 123.542C245.788 124.005 245.467 120.469 247.474 119.297C249.482 118.125 252.674 118.154 254.6 119.386C256.56 120.535 256.063 124.08 254.486 123.631C251.218 122.7 250.219 122.7 247.361 123.542Z"
+              fill="#F4F3F8"
+            />
+            <path
+              d="M227.62 123.542C229.193 124.005 229.515 120.469 227.507 119.297C225.499 118.125 222.307 118.154 220.382 119.386C218.421 120.535 218.918 124.08 220.495 123.631C223.763 122.7 224.762 122.7 227.62 123.542Z"
+              fill="#F4F3F8"
+            />
+            <path
+              d="M282.536 171.538C282.536 186.203 278.508 204.51 272.743 204.232C267.085 203.943 267.588 186.086 267.938 174.215C268.172 166.267 265.315 153.827 271.08 154.104C276.721 154.24 282.536 162.051 282.536 171.538Z"
+              fill="url(#paint7_linear)"
+            />
+            <path
+              d="M192.732 171.538C192.732 186.203 196.759 204.51 202.524 204.232C208.182 203.943 207.679 186.086 207.329 174.215C207.095 166.267 209.952 153.827 204.187 154.104C198.546 154.24 192.732 162.051 192.732 171.538Z"
+              fill="url(#paint8_linear)"
+            />
             <circle cx="307.5" cy="69.5" r="2.5" fill="#AFABD4" />
             <circle cx="243" cy="5" r="5" fill="#AFABD4" />
             <circle cx="198" cy="46" r="4" fill="#AFABD4" />
@@ -1026,7 +1145,11 @@
               <Swiper-slide class="team__slider-item">
                 <img class="team__slider-item-img" src="../static/images/team-slider1.jpg" alt="">
               </Swiper-slide>
-              <button slot="button-prev" class="team__slider-button-next" @click="teamIndex >= Object.keys(team).length -1 ? teamIndex = 0 : teamIndex++ ">
+              <button
+                slot="button-prev"
+                class="team__slider-button-next"
+                @click="teamIndex >= Object.keys(team).length -1 ? teamIndex = 0 : teamIndex++ "
+              >
                 <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M35.7071 8.71052C36.0976 8.32 36.0976 7.68683 35.7071 7.29631L29.3431 0.932348C28.9526 0.541823 28.3195 0.541823 27.9289 0.932348C27.5384 1.32287 27.5384 1.95604 27.9289 2.34656L33.5858 8.00342L27.9289 13.6603C27.5384 14.0508 27.5384 14.684 27.9289 15.0745C28.3195 15.465 28.9526 15.465 29.3431 15.0745L35.7071 8.71052ZM8.74228e-08 9.00342L35 9.00341L35 7.00341L-8.74228e-08 7.00342L8.74228e-08 9.00342Z"
@@ -1034,7 +1157,11 @@
                   />
                 </svg>
               </button>
-              <button slot="button-next" class="team__slider-button-prev" @click="teamIndex <= 0 ? teamIndex = Object.keys(team).length - 1 : teamIndex-- ">
+              <button
+                slot="button-next"
+                class="team__slider-button-prev"
+                @click="teamIndex <= 0 ? teamIndex = Object.keys(team).length - 1 : teamIndex-- "
+              >
                 <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.292893 7.29631C-0.0976311 7.68684 -0.0976311 8.32 0.292893 8.71052L6.65685 15.0745C7.04738 15.465 7.68054 15.465 8.07107 15.0745C8.46159 14.684 8.46159 14.0508 8.07107 13.6603L2.41421 8.00342L8.07107 2.34656C8.46159 1.95604 8.46159 1.32287 8.07107 0.93235C7.68054 0.541826 7.04738 0.541826 6.65685 0.93235L0.292893 7.29631ZM36 7.00342H1V9.00342H36V7.00342Z"
@@ -1069,438 +1196,517 @@
   </div>
 </template>
 
-<style lang="sass" >
-.index-main
-  overflow: hidden
-#robot
-  transition: opacity 0.5s ease
-.section__inner
-  display: flex
-  align-items: center
-  justify-content: space-between
-  .text-item
-    padding: 0
-    margin: 0
-    font-size: 18px
-    line-height: 140%
-    & + &
-      margin-top: 20px
-
-.preview
-  overflow: hidden
-  &__title
-    max-width: 570px
-    margin-bottom: 20px
-    line-height: 140%
-  &__list
-    margin-bottom: 60px
-  &__img
-    margin-right: -250px
-
-.clients
-  padding-top: 70px
-  &__title
-    padding-bottom: 30px
-  &__items
-    display: flex
-    align-items: center
-    justify-content: space-between
-    overflow: auto
-    &::-webkit-scrollbar
-      background: rgb(255, 255, 255)
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 33%, rgba(175, 171, 212, 1) 34%, rgba(175, 171, 212, 1) 65%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%)
-      height: 3px
-    &::-webkit-scrollbar-thumb
-      height: 3px
-      background-color: #7873AA
-.web-development
-  padding-bottom: 50px
-  &__img
-    margin-right: -150px
-  &__title
-    margin-bottom: 40px
-.mobile-development
-  padding-top: 60px
-  padding-bottom: 30px
-  &__title
-    margin-bottom: 40px
-  &__img
-    margin-left: -80px
-
-.services
-  &__img
-     margin-right: -150px
-  &__title
-    margin-bottom: 40px
-
-.design
-  padding-top: 60px
-  padding-bottom: 70px
-  &__img
-    margin-left: -60px
-  &__title
-     margin-bottom: 40px
-
-.stack
-  padding-top: 60px
-  &__title
-    margin-bottom: 60px
-
-.cta
-  padding-top: 175px
-  padding-bottom: 200px
-  position: relative
-  &__bg
-    position: absolute
-    bottom: -20px
-    right: 0
-    width: 100%
-    z-index: -1
-  &__inner
-    max-width: 570px
-  &__text
-    font-weight: 500
-    font-size: 24px
-    line-height: 140%
-    margin-bottom: 60px
-
-.works
-  padding-top: 120px
-  background: linear-gradient(180deg, #F4F3F8 0%, #FFFFFF 100%)
-  &__inner
-    display: flex
-    align-items: center
-  &__title
-    margin-bottom: 90px
-  &__subtitle
-    font-weight: 500
-    font-size: 24px
-    line-height: 140%
-    color: #FF6E6C
-    margin-bottom: 10px
-  &__text
-    font-size: 18px
-    line-height: 140%
-    margin-bottom: 40px
-    max-width: 300px
-
-  &__slider
-    &-item
-      transform: scale(0.6)
-      transition: all .5s ease
-      filter: drop-shadow(-10px 10px 20px rgba(52, 49, 80, 0.35))
-    &-img
-      width: 100%
-      height: 100%
-    &-wrapper
-      background-image: url("../static/images/phone-slider-bg.png")
-      background-repeat: no-repeat
-      background-size: contain
-      background-position: bottom
-      margin-right: 150px
-      .swiper-wrapper
-        padding-bottom: 43px
-        max-width: 510px
-        .swiper-slide-active
-          transform: scale(1)
-    &-button
-      &-next,
-      &-prev
-        position: absolute
-        bottom: 5px
-        height: 20px
-        border: none
-        background: transparent
-        z-index: 10
-      &-next
-        right: 30px
-      &-prev
-        left: 30px
-
-.testimonials
-  padding: 120px 0 60px
-  &__inner
-    padding: 0 80px
-    margin: 0 -80px
-    position: relative
-  &__slider-button
-    &-next,
-    &-prev
-      border: none
-      position: absolute
-      background: none
-      top: 50%
-      transform: translateY(-50%)
-      z-index: 10
-      cursor: pointer
-      padding: 0
-      margin: 0
-    &-next
-      right: 0
-    &-prev
-      left: 0
-  &__title
-    margin-bottom: 60px
-  &__slider
+<style lang="sass">
+  .index-main
     overflow: hidden
-    .swiper-wrapper
-      padding: 50px 0 70px
-    .swiper-pagination-bullet
-      width: 8px
-      background: #C4C4C4
-      height: 8px
-      opacity: 1
-      margin: 0 15px
-      &-active
-        width: 10px
-        height: 10px
-        background: #7873AA
-    .swiper-pagination
+
+    #robot
+      transition: opacity 0.5s ease
+
+    .section__inner
       display: flex
       align-items: center
-      justify-content: center
-    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
-      margin: 0 15px
-    &-item
-      border: 1px solid #F4F3F8
-      border-radius: 6px
-      position: relative
-      padding: 92px 30px 53px
-      box-sizing: border-box
-      &:before
-        content: ''
-        background-image: url("../static/images/testimonials-slider-before.png")
-        width: 23px
-        height: 20px
-        position: absolute
-        top: 30px
-        right: 30px
-      &-img
-        position: absolute
-        top: 0
-        left: 30px
-        width: 100px
-        height: 100px
-        border-radius: 50%
-        transform: translateY(-50%)
-      &-title
-        font-size: 20px
-        color: #1F1235
-        margin-bottom: 30px
-      &-text-item
-        font-size: 16px
-        color: #9A98AE
+      justify-content: space-between
+
+      .text-item
+        padding: 0
+        margin: 0
+        font-size: 18px
         line-height: 140%
+
         & + &
           margin-top: 20px
-.team
-  width: 100vw
-  display: grid
-  grid-template-columns: 1fr 1fr
-  grid-template-rows: 1fr 1fr
-  gap: 0px 0px
-  grid-template-areas: "slider title" "slider content"
-  padding-top: 120px
-  padding-bottom: 120px
-  background-image: url("../static/images/team-bg.png")
-  background-repeat: no-repeat
-  background-position: center
-  background-size: contain
-  .slider
-    grid-area: slider
-  .title
-    grid-area: title
-  .content
-    grid-area: content
-  &__slider
-    margin: 0 0 0 -70px
-    padding-bottom: 50px
-    width: 50vw
-    max-width: 50vw
-    &-wrapper
-      width: 50vw
-      max-width: 50vw
-    .swiper-slide:not(.swiper-slide-duplicate-prev)
-      position: relative
+
+    .preview
       overflow: hidden
-      border-radius: 8px
-      &:after
-        border-radius: 8px
-        content: ''
+
+      &__title
+        max-width: 570px
+        margin-bottom: 20px
+        line-height: 140%
+
+      &__list
+        margin-bottom: 60px
+
+      &__img
+        margin-right: -250px
+
+    .clients
+      padding-top: 70px
+
+      &__title
+        padding-bottom: 30px
+
+      &__items
+        display: flex
+        align-items: center
+        justify-content: space-between
+        overflow: auto
+
+        &::-webkit-scrollbar
+          background: rgb(255, 255, 255)
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 33%, rgba(175, 171, 212, 1) 34%, rgba(175, 171, 212, 1) 65%, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0) 100%)
+          height: 3px
+
+        &::-webkit-scrollbar-thumb
+          height: 3px
+          background-color: #7873AA
+
+    .web-development
+      padding-bottom: 50px
+
+      &__img
+        margin-right: -150px
+
+      &__title
+        margin-bottom: 40px
+
+    .mobile-development
+      padding-top: 60px
+      padding-bottom: 30px
+
+      &__title
+        margin-bottom: 40px
+
+      &__img
+        margin-left: -80px
+
+    .services
+      &__img
+        margin-right: -150px
+
+      &__title
+        margin-bottom: 40px
+
+    .design
+      padding-top: 60px
+      padding-bottom: 70px
+
+      &__img
+        margin-left: -60px
+
+      &__title
+        margin-bottom: 40px
+
+    .stack
+      padding-top: 60px
+
+      &__title
+        margin-bottom: 60px
+
+    .cta
+      padding-top: 175px
+      padding-bottom: 200px
+      position: relative
+
+      &__bg
         position: absolute
+        bottom: -20px
+        right: 0
         width: 100%
-        height: calc(100% - 3px)
-        background-color: #7873AA
-        opacity: 50%
-        top: 0
+        z-index: -1
+
+      &__inner
+        max-width: 570px
+
+      &__text
+        font-weight: 500
+        font-size: 24px
+        line-height: 140%
+        margin-bottom: 60px
+
+    .works
+      padding-top: 120px
+      background: linear-gradient(180deg, #F4F3F8 0%, #FFFFFF 100%)
+
+      &__inner
+        display: flex
+        align-items: center
+
+      &__title
+        margin-bottom: 90px
+
+      &__subtitle
+        font-weight: 500
+        font-size: 24px
+        line-height: 140%
+        color: #FF6E6C
+        margin-bottom: 10px
+
+      &__text
+        font-size: 18px
+        line-height: 140%
+        margin-bottom: 40px
+        max-width: 300px
+
+      &__slider
+        &-item
+          transform: scale(0.6)
+          transition: all .5s ease
+          filter: drop-shadow(-10px 10px 20px rgba(52, 49, 80, 0.35))
+
+        &-img
+          width: 100%
+          height: 100%
+
+        &-wrapper
+          background-image: url("../static/images/phone-slider-bg.png")
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: bottom
+          margin-right: 150px
+
+          .swiper-wrapper
+            padding-bottom: 43px
+            max-width: 510px
+
+            .swiper-slide-active
+              transform: scale(1)
+
+        &-button
+          &-next,
+          &-prev
+            position: absolute
+            bottom: 5px
+            height: 20px
+            border: none
+            background: transparent
+            z-index: 10
+
+          &-next
+            right: 30px
+
+          &-prev
+            left: 30px
+
+    .testimonials
+      padding: 120px 0 60px
+
+      &__inner
+        padding: 0 80px
+        margin: 0 -80px
+        position: relative
+
+      &__slider-button
+        &-next,
+        &-prev
+          border: none
+          position: absolute
+          background: none
+          top: 50%
+          transform: translateY(-50%)
+          z-index: 10
+          cursor: pointer
+          padding: 0
+          margin: 0
+
+        &-next
+          right: 0
+
+        &-prev
+          left: 0
+
+      &__title
+        margin-bottom: 60px
+
+      &__slider
+        overflow: hidden
+
+        .swiper-wrapper
+          padding: 50px 0 70px
+
+        .swiper-pagination-bullet
+          width: 8px
+          background: #C4C4C4
+          height: 8px
+          opacity: 1
+          margin: 0 15px
+
+          &-active
+            width: 10px
+            height: 10px
+            background: #7873AA
+
+        .swiper-pagination
+          display: flex
+          align-items: center
+          justify-content: center
+
+        .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+          margin: 0 15px
+
+        &-item
+          border: 1px solid #F4F3F8
+          border-radius: 6px
+          position: relative
+          padding: 92px 30px 53px
+          box-sizing: border-box
+
+          &:before
+            content: ''
+            background-image: url("../static/images/testimonials-slider-before.png")
+            width: 23px
+            height: 20px
+            position: absolute
+            top: 30px
+            right: 30px
+
+          &-img
+            position: absolute
+            top: 0
+            left: 30px
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            transform: translateY(-50%)
+
+          &-title
+            font-size: 20px
+            color: #1F1235
+            margin-bottom: 30px
+
+          &-text-item
+            font-size: 16px
+            color: #9A98AE
+            line-height: 140%
+
+            & + &
+              margin-top: 20px
+
+    .team
+      width: 100vw
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      gap: 0px 0px
+      grid-template-areas: "slider title" "slider content"
+      padding-top: 120px
+      padding-bottom: 120px
+      background-image: url("../static/images/team-bg.png")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+
+      .slider
+        grid-area: slider
+
+      .title
+        grid-area: title
+
+      .content
+        grid-area: content
+
+      &__slider
+        margin: 0 0 0 -70px
+        padding-bottom: 50px
+        width: 50vw
+        max-width: 50vw
+
+        &-wrapper
+          width: 50vw
+          max-width: 50vw
+
+        .swiper-slide:not(.swiper-slide-duplicate-prev)
+          position: relative
+          overflow: hidden
+          border-radius: 8px
+
+          &:after
+            border-radius: 8px
+            content: ''
+            position: absolute
+            width: 100%
+            height: calc(100% - 3px)
+            background-color: #7873AA
+            opacity: 50%
+            top: 0
+            left: 0
+
+        &-item-img
+          width: 100%
+          border-radius: 8px
+
+        &-button-next,
+        &-button-prev
+          position: absolute
+          bottom: 0
+          background: none
+          border: none
+          z-index: 2
+
+        &-button-next
+          right: 0
+
+        &-button-prev
+          right: 100px
+
+      &__title
+        margin-bottom: 100px
+
+      &__name
+        margin-bottom: 10px
+        font-weight: 500
+        font-size: 24px
+        line-height: 140%
+        color: #1B1425
+
+      &__prof
+        margin-bottom: 40px
+        font-weight: 500
+        font-size: 18px
+        line-height: 140%
+
+    .robot-wrapper
+      position: relative
+
+      & > svg
+        position: absolute
+        top: 210px
+
+    @media (max-width: 1770px)
+      .robot-wrapper > svg
+        display: none
+
+    @media (max-width: 1330px)
+      .testimonials__slider-button-prev,
+      .testimonials__slider-button-next
+        display: none
+
+    @media (max-width: 1250px)
+      .swiper-slide-next:after
+        display: none
+      .web-development__img
+        margin-right: -120px
+        margin-left: -50px
+
+    @media (max-width: 1100px)
+      .preview__img
+        margin-left: -220px
+        margin-right: -140px
+
+    @media (max-width: 1000px)
+      .preview__img
+        margin-right: -220px
+
+        svg
+          width: 90%
+          margin: 0 auto
+          display: block
+
+    @media (max-width: 950px)
+      .works__inner
+        flex-wrap: wrap
+      .works__slider-wrapper
+        margin-right: 0
+        width: 100%
+      .works__content
+        margin: 0 auto
+      .works__title
+        margin-bottom: 30px
+        margin-top: 60px
+
+    @media (max-width: 900px)
+      .cta
+        padding-top: 0
+        padding-bottom: 160px
+        background-position: 60% 0
+        background-size: 200%
+
+        &__bg
+          width: auto
+          z-index: -1
+
+      .web-development__inner,
+      .services__inner
+        flex-direction: column-reverse
+      .design__inner,
+      .mobile-development__inner
+        flex-direction: column
+      .web-development__img,
+      .mobile-development__img,
+      .services__img,
+      .design__img
+        margin-left: -60px
+        margin-right: -60px
+
+        & img
+          width: 100%
+
+    @media (max-width: 800px)
+      .team
+        display: grid
+        grid-template-columns: auto
+        grid-template-rows: auto
+        gap: 0px 0px
+        grid-template-areas: "title" "slider" "content"
+      .team__slider-wrapper
+        max-width: none
+        width: auto
+      .team__slider
+        margin: 0 auto
+      .team
+        padding: 0 30px
+      .team__slider-button-prev
         left: 0
-    &-item-img
-      width: 100%
-      border-radius: 8px
-    &-button-next,
-    &-button-prev
-      position: absolute
-      bottom: 0
-      background: none
-      border: none
-      z-index: 2
-    &-button-next
-      right: 0
-    &-button-prev
-      right: 100px
-  &__title
-    margin-bottom: 100px
-  &__name
-    margin-bottom: 10px
-    font-weight: 500
-    font-size: 24px
-    line-height: 140%
-    color: #1B1425
-  &__prof
-    margin-bottom: 40px
-    font-weight: 500
-    font-size: 18px
-    line-height: 140%
-.robot-wrapper
-  position: relative
-  & > svg
-    position: absolute
-    top: 210px
+      .swiper-slide:after
+        display: none
+      .team__title
+        margin-bottom: 20px
+      .team .content
+        justify-self: center
+      .team__slider
+        width: 100%
+        max-width: 400px
+      .team__slider-wrapper
+        width: 100%
+        max-width: 400px
+        margin: 0 auto
 
-@media (max-width: 1770px)
-  .robot-wrapper > svg
-    display: none
+    @media (max-width: 750px)
+      .preview__img
+        margin: -50px -160px
 
-@media (max-width: 1330px)
-  .testimonials__slider-button-prev,
-  .testimonials__slider-button-next
-    display: none
-@media (max-width: 1250px)
-  .swiper-slide-next:after
-    display: none
-  .web-development__img
-    margin-right: -120px
-    margin-left: -50px
+    @media (max-width: 700px)
+      .preview__inner
+        flex-direction: column-reverse
 
-@media (max-width: 1100px)
-  .preview__img
-    margin-left: -220px
-    margin-right: -140px
+    @media (max-width: 600px)
+      .web-development__img
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: -100px
+        margin-right: -100px
 
-@media (max-width: 1000px)
-  .preview__img
-    margin-right: -220px
-    svg
-      width: 90%
-      margin: 0 auto
-      display: block
+    @media (max-width: 500px)
+      .team
+        padding: 0 15px
+      .web-development__img
+        margin-right: -150px
+      .preview__img
+        margin-left: -80px
+      .team__slider-wrapper
+        max-width: 300px
+      .team__slider
+        max-width: 300px
 
-@media (max-width: 950px)
-  .works__inner
-    flex-wrap: wrap
-  .works__slider-wrapper
-    margin-right: 0
-    width: 100%
-  .works__content
-    margin: 0 auto
-  .works__title
-    margin-bottom: 30px
-    margin-top: 60px
-@media (max-width: 900px)
-  .cta
-    padding-top: 0
-    padding-bottom: 160px
-    background-position: 60% 0
-    background-size: 200%
-    &__bg
-      width: auto
-      z-index: -1
+    @media (max-width: 425px)
+      .web-development__img
+        margin-right: -100px
+        margin-left: -60px
 
-  .web-development__inner,
-  .services__inner
-    flex-direction: column-reverse
-  .design__inner,
-  .mobile-development__inner
-    flex-direction: column
-  .web-development__img,
-  .mobile-development__img,
-  .services__img,
-  .design__img
-    margin-left: -60px
-    margin-right: -60px
-    & img
-      width: 100%
+    @media (max-width: 400px)
+      .preview__title
+        font-size: 24px
+      .team__slider-wrapper
+        max-width: 265px
+      .team__slider
+        max-width: 265px
 
-@media (max-width: 800px)
-  .team
-    display: grid
-    grid-template-columns: auto
-    grid-template-rows: auto
-    gap: 0px 0px
-    grid-template-areas: "title" "slider" "content"
-  .team__slider-wrapper
-    max-width: none
-    width: auto
-  .team__slider
-    margin: 0 auto
-  .team
-    padding: 0 30px
-  .team__slider-button-prev
-    left: 0
-  .swiper-slide:after
-    display: none
-  .team__title
-    margin-bottom: 20px
-  .team .content
-    justify-self: center
-  .team__slider
-    width: 100%
-    max-width: 400px
-  .team__slider-wrapper
-    width: 100%
-    max-width: 400px
-    margin: 0 auto
-
-@media (max-width: 750px)
-  .preview__img
-    margin: -50px -160px
-
-@media (max-width: 700px)
-  .preview__inner
-    flex-direction: column-reverse
-
-@media (max-width: 600px)
-  .web-development__img
-    display: flex
-    align-items: center
-    justify-content: center
-    margin-left: -100px
-    margin-right: -100px
-
-@media (max-width: 500px)
-  .team
-    padding: 0 15px
-  .web-development__img
-    margin-right: -150px
-  .preview__img
-    margin-left: -80px
-  .team__slider-wrapper
-    max-width: 300px
-  .team__slider
-    max-width: 300px
-
-@media (max-width: 425px)
-  .web-development__img
-    margin-right: -100px
-    margin-left: -60px
-
-@media (max-width: 400px)
-  .preview__title
-    font-size: 24px
-  .team__slider-wrapper
-    max-width: 265px
-  .team__slider
-    max-width: 265px
+html:not(.no-js) [data-aos=fade-right]
+   transform: translate3d(-100vw, 0, 0)
+html:not(.no-js) [data-aos=fade-left]
+   transform: translate3d(100vw, 0, 0)
 </style>
 
 <script>
@@ -1584,7 +1790,7 @@ export default {
     }
   },
 
-  beforeMount  () {
+  beforeMount () {
     window.addEventListener('scroll', this.handleScroll)
   },
   beforeDestroy () {
@@ -1595,8 +1801,6 @@ export default {
       // if (this.$refs.robot.getBoundingClientRect().bottom > 350 && this.$refs.robot.getBoundingClientRect().bottom < 450) {
       // }
       // this.$refs.robot.setAttribute('opacity', '0')
-      console.log(window.scrollY)
-
       if (window.scrollY > this.scrollYLast) {
         if (this.$refs.robot.getBoundingClientRect().bottom < 150 && this.top === 0) {
           this.$refs.robot.style.transform = 'translate(0, 0)'

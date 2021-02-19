@@ -12,6 +12,7 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
